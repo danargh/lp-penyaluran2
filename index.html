@@ -15,43 +15,41 @@
          defer
          src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
       ></script>
-
+      <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
       <!-- Style Swipper -->
    </head>
-   <body class="bg-[#F8FCFF] text-[#404040] font-[Poppins]">
+   <body class="bg-[#ffffff] text-[#404040] font-[Poppins]">
       <!-- Navbar -->
       <nav class="z-50 bg-white" id="navbar">
          <div
             class="w-[90%] md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1310px] mx-auto py-4 md:py-4"
          >
-            <div
-               class="flex flex-wrap md:flex-nowrap items-center justify-between mx-auto"
-            >
+            <div class="flex flex-wrap items-center justify-between mx-auto">
                <a class="flex items-center" href="/">
                   <img
                      loading="lazy"
                      class="h-6 sm:h-7"
-                     src="assets/lp-penyaluran-icon/navbar/favicon.svg"
+                     src="assets/lp-penyaluran-icon/favicon.svg"
                      alt="Eduwork Logo"
                   />
                </a>
-               <div class="flex gap-3 md:order-2 md:hidden">
+               <div class="flex gap-3 lg:order-2">
                   <button
                      type="button"
-                     class="text-[#187CFF] font-[500] hover:text-white bg-[#F6FCFF] text-[14px] py-[9.5px] px-[20px] rounded-[12px] border border-[#187CFF] hidden md:block hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm text-center mr-3 md:mr-0"
+                     class="text-[#187CFF] font-[500] hover:text-white bg-[#F6FCFF] text-[14px] py-[9.5px] px-[20px] rounded-full border border-[#187CFF] hidden lg:block hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm text-center mr-3 md:mr-0"
                   >
                      Sign In
                   </button>
                   <button
                      type="button"
-                     class="text-white font-[500] bg-[#187CFF] text-[14px] py-[9.5px] px-[20px] rounded-[12px] hidden md:block hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm text-center mr-3 md:mr-0"
+                     class="text-white font-[500] bg-[#187CFF] text-[14px] py-[9.5px] px-[20px] rounded-full hidden lg:block hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 text-sm text-center mr-3 md:mr-0"
                   >
                      Register
                   </button>
                   <button
                      data-collapse-toggle="navbar-sticky"
                      type="button"
-                     class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                     class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                      aria-controls="navbar-sticky"
                      aria-expanded="false"
                   >
@@ -72,24 +70,17 @@
                   </button>
                </div>
                <div
-                  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                  class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
                   id="navbar-sticky"
                >
                   <ul
-                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row gap-[10px] md:gap-[20px] lg:gap-[40px] md:mt-0 md:text-sm md:font-semibold md:border-0 md:bg-transparent"
+                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row gap-[10px] lg:gap-[40px] lg:mt-0 lg:text-sm lg:font-semibold lg:border-0 lg:bg-transparent"
                   >
                      <button
                         id="dropdownNavbarLink"
-                        class="text-base font-[400] flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                        class="flex items-center justify-between font-[500] w-full py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto"
                      >
                         Home
-                     </button>
-
-                     <button
-                        id="dropdownNavbarLink"
-                        class="text-base font-[400] text-primary flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
-                     >
-                        Community
                      </button>
 
                      <li>
@@ -124,7 +115,78 @@
                               :aria-expanded="open"
                               :aria-controls="$id('dropdown-button')"
                               type="button"
-                              class="text-base font-[400] text-gray-700 flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                              class="text-base font-[400] lg:text-sm lg:font-[500] flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto"
+                           >
+                              Community
+                              <svg
+                                 class="w-5 h-5 ml-1"
+                                 aria-hidden="true"
+                                 fill="currentColor"
+                                 viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                 ></path>
+                              </svg>
+                           </button>
+                           <div
+                              x-ref="panel"
+                              x-show="open"
+                              x-transition.origin.top.left
+                              x-on:click.outside="close($refs.button)"
+                              :id="$id('dropdown-button')"
+                              style="display: none"
+                              class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
+                           >
+                              <a
+                                 href="#"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                                 >Regular</a
+                              >
+                              <a
+                                 href="#"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                                 >Kelas</a
+                              >
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div
+                           x-data="{
+                              open: false,
+                              toggle() {
+                                    if (this.open) {
+                                       return this.close()
+                                    }
+                  
+                                    this.$refs.button.focus()
+                  
+                                    this.open = true
+                              },
+                              close(focusAfter) {
+                                    if (! this.open) return
+                  
+                                    this.open = false
+                  
+                                    focusAfter && focusAfter.focus()
+                              }
+                           }"
+                           x-on:keydown.escape.prevent.stop="close($refs.button)"
+                           x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+                           x-id="['dropdown-button']"
+                           class="relative text-sm font-semibold"
+                        >
+                           <button
+                              x-ref="button"
+                              x-on:click="toggle()"
+                              :aria-expanded="open"
+                              :aria-controls="$id('dropdown-button')"
+                              type="button"
+                              class="text-base font-[400] lg:text-sm lg:font-[500] flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto"
                            >
                               Learning
                               <svg
@@ -148,22 +210,21 @@
                               x-on:click.outside="close($refs.button)"
                               :id="$id('dropdown-button')"
                               style="display: none"
-                              class="relative md:absolute left-0 mt-[25px] w-full md:w-40 rounded-md bg-white shadow-none md:shadow-s2"
+                              class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
                            >
                               <a
                                  href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                                  >Regular</a
                               >
                               <a
                                  href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                                  >Kelas</a
                               >
                            </div>
                         </div>
                      </li>
-
                      <li>
                         <div
                            x-data="{
@@ -196,7 +257,7 @@
                               :aria-expanded="open"
                               :aria-controls="$id('dropdown-button')"
                               type="button"
-                              class="text-base font-[400] text-gray-700 flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                              class="text-base font-[400] text-primary lg:text-sm lg:font-[500] flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto"
                            >
                               Opportunity
                               <svg
@@ -220,110 +281,31 @@
                               x-on:click.outside="close($refs.button)"
                               :id="$id('dropdown-button')"
                               style="display: none"
-                              class="relative md:absolute left-0 mt-[25px] w-full md:w-40 rounded-md bg-white shadow-none md:shadow-s2"
+                              class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
                            >
                               <a
                                  href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                                  >Regular</a
                               >
                               <a
                                  href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
+                                 class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                                  >Kelas</a
                               >
                            </div>
                         </div>
                      </li>
 
-                     <li>
-                        <div
-                           x-data="{
-                              open: false,
-                              toggle() {
-                                    if (this.open) {
-                                       return this.close()
-                                    }
-                  
-                                    this.$refs.button.focus()
-                  
-                                    this.open = true
-                              },
-                              close(focusAfter) {
-                                    if (! this.open) return
-                  
-                                    this.open = false
-                  
-                                    focusAfter && focusAfter.focus()
-                              }
-                           }"
-                           x-on:keydown.escape.prevent.stop="close($refs.button)"
-                           x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
-                           x-id="['dropdown-button']"
-                           class="relative text-sm font-semibold"
-                        >
-                           <button
-                              x-ref="button"
-                              x-on:click="toggle()"
-                              :aria-expanded="open"
-                              :aria-controls="$id('dropdown-button')"
-                              type="button"
-                              class="text-base font-[400] md:hidden flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
-                           >
-                              <div class="flex gap-4 items-center">
-                                 Maudy Ayunda
-                              </div>
-                              <svg
-                                 class="w-5 h-5 ml-1"
-                                 aria-hidden="true"
-                                 fill="currentColor"
-                                 viewBox="0 0 20 20"
-                                 xmlns="http://www.w3.org/2000/svg"
-                              >
-                                 <path
-                                    fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"
-                                 ></path>
-                              </svg>
-                           </button>
-                           <div
-                              x-ref="panel"
-                              x-show="open"
-                              x-transition.origin.top.left
-                              x-on:click.outside="close($refs.button)"
-                              :id="$id('dropdown-button')"
-                              style="display: none"
-                              class="relative md:absolute left-0 mt-[25px] w-full md:w-40 rounded-md bg-white shadow-none md:shadow-s2"
-                           >
-                              <a
-                                 href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
-                                 >Regular</a
-                              >
-                              <a
-                                 href="#"
-                                 class="flex gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left text-base font-[400] hover:bg-gray-50 disabled:text-gray-500"
-                                 >Kelas</a
-                              >
-                           </div>
-                        </div>
-                     </li>
-                     <button
-                        id="dropdownNavbarLink"
-                        class="text-primary flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
-                     >
-                        Become a Mentor
-                     </button>
                      <button
                         type="button"
-                        class="text-white rounded-xl block md:hidden bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                        class="text-white rounded-full block lg:hidden bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-3 lg:mr-0"
                      >
                         Sign In
                      </button>
                      <button
                         type="button"
-                        class="text-white rounded-xl block md:hidden bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                        class="text-white rounded-full block lg:hidden bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-3 lg:mr-0"
                      >
                         Register
                      </button>
@@ -334,6 +316,1506 @@
       </nav>
       <!-- End Navbar -->
 
+      <!-- Hero -->
+      <div class="absolute top-[700px] w-full h-[200px] z-10">
+         <div class="wave"></div>
+      </div>
+      <div
+         class="lg:hidden block absolute top-0 w-full h-[730px] overflow-hidden"
+      >
+         <div
+            class="lg:hidden block absolute left-0 w-[200%] md:w-full h-[740px] hero-gradasi z-[9]"
+         ></div>
+      </div>
+      <section
+         class="xl:bg-[url('./assets/lp-penyaluran/bg-hero.png')] bg-white sm:bg-[url('./assets/lp-penyaluran/bg-hero-responsive.png')] bg-no-repeat bg-[top_right_-20rem] md:bg-[top_right_-10rem] 2xl:bg-contain 2xl:bg-bottom xl:bg-center bg-cover"
+      >
+         <div class="container mx-auto m-0">
+            <div id="Hero" class="lg:mt-20 mt-14 w-full h-[800px]">
+               <div
+                  class="w-[90%] md:max-w-[1024px] lg:max-w-[1280px] h-fit xl:max-w-[1310px] mx-auto py-4 md:py-4"
+               >
+                  <div class="w-fit h-[600px] pt-[80px]">
+                     <div
+                        class="relative flex flex-col gap-y-4 w-full md:w-[100%] z-30"
+                     >
+                        <h1
+                           class="text-4xl font-[700] w-full md:text-5xl mx-auto md:mx-0 text-left"
+                        >
+                           Akselerasi
+                           <span class="text-[#187CFF]">Karir</span>
+                        </h1>
+                        <div
+                           class="flex-col w-full md:w-[480px] mt-[12px] md:mt-[12px]"
+                        >
+                           <p class="font-[400] text-[20px] leading-[36px]">
+                              Dapatkan real project dari Mitra Eduwork,
+                              Dibimbing oleh mentor profesional di Bidangnya.
+                              Juga, Dapatkan Tips & trik dari Profesional HR
+                              untuk pembuatan CV dan Latihan Wawancara
+                           </p>
+                        </div>
+                        <div
+                           class="flex justify-start gap-6 my-6 md:flex-nowrap flex-wrap"
+                        >
+                           <div class="pr-6 border-r-2 border-r-slate-300">
+                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                                 1691+
+                              </h4>
+                              <p class="font-[500] text-sm">Member bergabung</p>
+                           </div>
+                           <div class="pr-6 border-r-2 border-r-slate-300">
+                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                                 59+
+                              </h4>
+                              <p class="font-[500] text-sm">Mentor Aktif</p>
+                           </div>
+                           <div>
+                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                                 136Juta+
+                              </h4>
+                              <p class="font-[500] text-sm">Profit Sharing</p>
+                           </div>
+                        </div>
+
+                        <form
+                           action="#"
+                           class="shadow-input h-[72px] flex bg-white p-2 rounded-3xl w-full sm:max-w-[480px] gap-2"
+                        >
+                           <div class="p-4 w-full flex gap-2 items-center">
+                              <img
+                                 loading="lazy"
+                                 src="assets/lp-penyaluran-icon/mail.svg"
+                                 width="24px"
+                                 alt="mail-icon"
+                              />
+                              <input
+                                 type="email"
+                                 class="w-full outline-none border-none focus:ring-0"
+                                 placeholder="Enter your email"
+                              />
+                           </div>
+                           <button
+                              class="hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 flex items-center px-8 py-0 bg-[#187CFF] font-[600] text-white rounded-2xl"
+                              type="submit"
+                           >
+                              Daftar
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+
+                  <div
+                     class="relative w-full h-[730px] hidden lg:block z-20"
+                  ></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of Hero -->
+
+      <!-- PARTNER -->
+      <section
+         class="w-[90%] mt-[-100px] relative z-20 md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1310px] mx-auto pb-10 sm:pb-20 md:pb-24 lg:pb-20"
+      >
+         <div class="mx-auto h-fit">
+            <div class="z-10 flex flex-col lg:flex-row">
+               <div class="pb-10 lg:pb-0 text-center lg:text-left">
+                  <h4
+                     class="w-full lg:w-[360px] text-3xl md:text-[40px] md:leading-[48px] font-[400] mr-[37px] md:mr-[20px]"
+                  >
+                     <span
+                        class="text-3xl md:text-[40px] md:leading-[48px] font-[700] text-[#187cff]"
+                        >Our 100+
+                     </span>
+                     <br />
+                     Business Partner
+                  </h4>
+               </div>
+               <div class="slider w-full overflow-hidden">
+                  <div
+                     class="slide-track flex gap-[20px] md:gap-[61.05px] items-center h-full"
+                  >
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner1.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner2.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner3.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner4.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner5.svg"
+                        />
+                     </div>
+                  </div>
+
+                  <div
+                     class="slide-track flex gap-[20px] md:gap-[61.05px] ml-[110px] md:ml-[65.05px] items-center"
+                  >
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner1.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner2.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner3.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner4.svg"
+                        />
+                     </div>
+                     <div class="slide">
+                        <img
+                           loading="lazy"
+                           src="assets/lp-penyaluran-icon/partner5.svg"
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of Partner -->
+
+      <!-- Akselerasi karir -->
+      <section class="pt-8 pb-10 sm:pb-24 sm:pt-0">
+         <div
+            class="flex flex-col items-center w-[90%] md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1310px] h-fit mx-auto"
+         >
+            <div
+               class="hidden lg:block absolute left-0 w-[60%] h-fit lg:h-[420px] bg-[#187cff] rounded-[33px] lg:rounded-none lg:rounded-tr-[100px] p-[10%] lg:pb-0 lg:pr-0 lg:pt-[48.7px] lg:pl-[213px]"
+            ></div>
+            <div
+               class="flex flex-col gap-3 lg:flex-row lg:gap-[32px] lg:pr-4 w-full lg:w-full h-fit lg:h-[420px] bg-[#187cff] rounded-[20px] lg:rounded-none lg:rounded-tr-[100px] py-[35px] px-[25px] lg:pl-0 lg:pb-0 lg:pt-[80px] lg:px-auto"
+            >
+               <div class="mx-auto lg:mx-0 lg:w-[360px]">
+                  <img
+                     loading="lazy"
+                     class="ISA-img lg:w-[360px] shadow-box-custom"
+                     src="/assets/lp-penyaluran/akselerasi.png"
+                     alt="akselerasi img"
+                  />
+               </div>
+               <div class="mt-0 z-10 lg:w-[900px]">
+                  <h4
+                     class="mt-4 md:mt-0 text-left text-3xl md:text-[44px] text-white md:leading-[64px] font-[700]"
+                  >
+                     Apa itu Akselerasi Karir?
+                  </h4>
+                  <p
+                     class="text-base mt-4 md:text-[28px] md:leading-[40px] font-[400] text-white"
+                  >
+                     Dengan program akselerasi karir tambah pengalaman kerja dan
+                     dapatkan banyak portofolio dengan bimbingan mentor
+                     profesional mulai 0 rupiah!
+                  </p>
+                  <div class="relative">
+                     <div
+                        class="lg:absolute w-full lg:max-w-[900px] h-fit mt-[23.3px] flex flex-col md:grid md:grid-cols-2 gap-[16px]"
+                     >
+                        <div
+                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                        >
+                           <img
+                              class="w-11 block lg:hidden xl:block"
+                              src="assets/lp-penyaluran-icon/apa-itu-akselerasi/fluent_people-star-24-regular.svg"
+                              alt="people icon"
+                           />
+                           <div class="text-left">
+                              <h4 class="font-[700] text-[20px] mb-[5px]">
+                                 Sekali bayar dijamin dapat kerja
+                              </h4>
+                              <p
+                                 class="star text-[16px] font-[400] text-[#737373] flex flex-col gap-[12px] lg:gap-0"
+                              >
+                                 Hanya dengan membayar sekali langsung bimbingan
+                                 sampai dapat kerja
+                              </p>
+                           </div>
+                        </div>
+                        <div
+                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                        >
+                           <img
+                              class="w-11 block lg:hidden xl:block"
+                              src="assets/lp-penyaluran-icon/apa-itu-akselerasi/solar_hand-money-linear.svg"
+                              alt="hand money icon"
+                           />
+                           <div class="text-left">
+                              <h4 class="font-[700] text-[20px] mb-[5px]">
+                                 Harga Terjangkau & Bisa Dicicil
+                              </h4>
+                              <p
+                                 class="star text-[16px] font-[400] text-[#737373] flex flex-col gap-[12px] lg:gap-0"
+                              >
+                                 Kuliah bisa puluhan juta, total cukup 5jt bisa
+                                 dicicil setahun lagi
+                              </p>
+                           </div>
+                        </div>
+                        <div
+                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                        >
+                           <img
+                              class="w-11 block lg:hidden xl:block"
+                              src="assets/lp-penyaluran-icon/apa-itu-akselerasi/mdi_clock-fast.svg"
+                              alt="hand money icon"
+                           />
+                           <div class="text-left">
+                              <h4 class="font-[700] text-[20px] mb-[5px]">
+                                 Cepat, Tidak Sampai 1 Tahun
+                                 <span class="text-red-500">*</span>
+                              </h4>
+                              <p
+                                 class="star text-[16px] font-[400] text-[#737373] flex flex-col gap-[12px] lg:gap-0"
+                              >
+                                 Dibanding kuliah, sudah lama min 4 tahun,
+                                 ketika lulus harus cari kerja sendiri lagi
+                              </p>
+                           </div>
+                        </div>
+                        <div
+                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                        >
+                           <img
+                              class="w-11 block lg:hidden xl:block"
+                              src="assets/lp-penyaluran-icon/apa-itu-akselerasi/carbon_task-approved.svg"
+                              alt="hand money icon"
+                           />
+                           <div class="text-left">
+                              <h4 class="font-[700] text-[20px] mb-[5px]">
+                                 Dapat Garansi 1 Tahun
+                                 <span class="text-red-500">*</span>
+                              </h4>
+                              <p
+                                 class="star text-[16px] font-[400] text-[#737373] flex flex-col gap-[12px] lg:gap-0"
+                              >
+                                 Kalau sampai 1 tahun belum dapat kerja, kami
+                                 berikan layanan Gratis !
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of Akselerasi Karir -->
+
+      <!-- Industri -->
+      <div class="bg-white pt-64 sm:pb-20 pb-10">
+         <div class="container mx-auto">
+            <section
+               class="flex flex-col items-center w-[90%] h-fit mx-auto lg:w-[1016px]"
+            >
+               <h4
+                  class="text-center text-3xl md:text-4xl font-[600] text-[#303030]"
+               >
+                  Pilih Industri Kamu Saat Ini
+               </h4>
+               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+                  Saatnya untuk lampaui batasan. Bantu para member komunitas
+                  menyusun dan mencapai target karir mereka.
+               </p>
+               <div class="my-10 flex flex-col gap-y-6 relative">
+                  <div
+                     class="bg-white-gradient bottom-[-16px] bg-bottom w-full h-full absolute"
+                  ></div>
+                  <div class="flex justify-center gap-6 flex-wrap">
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-green-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/data-science.svg"
+                              alt="data-science-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Data Science
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              280 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-purple-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/engineer.svg"
+                              alt="engineer-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Engineering
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              2019 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-purple-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/engineer.svg"
+                              alt="Developer-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Developer
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              2019 mentors
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-orange-200">
+                           <img
+                              class="pt-1"
+                              src="assets/lp-penyaluran-icon/industri/marketing.svg"
+                              alt="marketing-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Marketing
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              1594 mentors
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-blue-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/human-res.svg"
+                              alt="human-resource-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Human Resource
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              4279 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-blue-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/human-res.svg"
+                              alt="machine-learning-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Machine Learning
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              4279 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-purple-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/graphic-design.svg"
+                              alt="graphic-design"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Graphic design
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              11157 mentors
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-purple-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/graphic-design.svg"
+                              alt="ui-ux-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              UI/UX Design
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              11157 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="flex gap-4 py-5 sm:w-auto w-full px-6 bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-cyan-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/copy-writing.svg"
+                              alt="machine-learning-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Copywriting
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              519 mentors
+                           </p>
+                        </div>
+                     </div>
+                     <div
+                        class="sm:flex gap-4 py-5 sm:w-auto w-full px-6 hidden bg-white shadow-box-custom rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-cyan-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/product-res.svg"
+                              alt="product-res-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Product Research
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              3092 mentors
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="sm:flex gap-4 py-5 sm:w-auto w-full px-6 hidden bg-white rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-green-200">
+                           <img
+                              src="assets/lp-penyaluran-icon/industri/data-science.svg"
+                              alt="data-science-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Data Science
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              280 mentors
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="sm:flex gap-4 py-5 sm:w-auto w-full px-6 hidden bg-white rounded-2xl"
+                     >
+                        <div class="p-[10px] rounded-full bg-orange-200">
+                           <img
+                              class="pt-1"
+                              src="assets/lp-penyaluran-icon/industri/marketing.svg"
+                              alt="marketing-icon"
+                           />
+                        </div>
+                        <div>
+                           <h6 class="text-md sm:text-xl font-[700]">
+                              Marketing
+                           </h6>
+                           <p class="text-sm font-[400] text-[#6B7B8A]">
+                              1594 mentors
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a
+                  href="#"
+                  class="hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full sm:w-[192px] text-center text-base font-[600] px-8 py-4 rounded-xl bg-[#187CFF] text-white"
+               >
+                  Jelajah Industri
+               </a>
+            </section>
+         </div>
+      </div>
+      <!-- End of industri -->
+
+      <!-- WFH -->
+      <div class="pt-10 sm:pt-20 pb-32 sm:pb-20 bg-[#F8FCFF]">
+         <div class="container mx-auto">
+            <section
+               class="lg:relative flex flex-col justify-center items-center w-[90%] md:w-full mx-auto lg:w-[1016px]"
+            >
+               <h4
+                  class="text-center text-3xl md:text-4xl font-[600] text-[#303030]"
+               >
+                  Bertemu Semuanya Walaupun di Rumah Aja
+               </h4>
+               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+                  Telah menjangkau 40 kota di Indonesia, kami terhubung dengan
+                  partner praktisi dari ragam geografis; Perbanyak koneksi,
+                  kembangkan komunitas.
+               </p>
+               <div class="grid grid-cols-2 md:grid-cols-5 w-full gap-5 mt-10">
+                  <div
+                     class="p-5 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
+                  >
+                     <img
+                        loading="lazy"
+                        src="assets/lp-penyaluran-icon/wfh/send.svg"
+                        alt="komunitas-icon"
+                     />
+                     <div class="flex flex-col items-center">
+                        <h5 class="font-[500] text-[#187CFF] text-[28px]">
+                           125+
+                        </h5>
+                        <p class="font-[600] text-base">Komunitas</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-5 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
+                  >
+                     <img
+                        loading="lazy"
+                        src="assets/lp-penyaluran-icon/wfh/users.svg"
+                        alt="mentee-icon"
+                     />
+                     <div class="flex flex-col items-center">
+                        <h5 class="font-[500] text-[#187CFF] text-[28px]">
+                           6500+
+                        </h5>
+                        <p class="font-[600] text-base">Mentee</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-5 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
+                  >
+                     <img
+                        loading="lazy"
+                        src="assets/lp-penyaluran-icon/wfh/profile.svg"
+                        alt="mentor-icon"
+                     />
+                     <div class="flex flex-col items-center">
+                        <h5 class="font-[500] text-[#187CFF] text-[28px]">
+                           125+
+                        </h5>
+                        <p class="font-[600] text-base">Mentor</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-5 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
+                  >
+                     <img
+                        loading="lazy"
+                        src="assets/lp-penyaluran-icon/wfh/discovery.svg"
+                        alt="kota-icon"
+                     />
+                     <div class="flex flex-col items-center">
+                        <h5 class="font-[500] text-[#187CFF] text-[28px]">
+                           40+
+                        </h5>
+                        <p class="font-[600] text-base">Kota</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-5 col-span-2 md:col-span-1 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
+                  >
+                     <img
+                        loading="lazy"
+                        src="assets/lp-penyaluran-icon/wfh/star.svg"
+                        alt="kota-icon"
+                     />
+                     <div class="flex flex-col items-center">
+                        <h5 class="font-[500] text-[#187CFF] text-[28px]">
+                           500+
+                        </h5>
+                        <p class="font-[600] text-base">Sukses Mentoring</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="relative w-full mx-auto">
+                  <a
+                     href="#"
+                     class="hover:bg-primary/80 focus:ring-4 text-center w-full focus:outline-none focus:ring-blue-300 absolute left-1/2 transform -translate-x-1/2 top-10 sm:w-[200px] text-base font-[600] px-8 py-4 rounded-xl bg-[#187CFF] text-white"
+                  >
+                     Daftar Sekarang
+                  </a>
+               </div>
+            </section>
+         </div>
+         <div
+            class="md:h-[576px] md:block hidden bg-[url('./assets/lp-penyaluran/bg-wfh.png')] bg-center bg-no-repeat bg-contain"
+         ></div>
+      </div>
+      <!-- End of Info -->
+
+      <!-- apa itu akselerasi karir2-->
+      <div
+         class="pt-10 sm:pt-20 pb-20 sm:pb-24 bg-white bg-[url('images/lp-mentor/bg-line.png')] bg-cover bg-no-repeat"
+      >
+         <div class="container mx-auto">
+            <section
+               class="lg:relative flex flex-col justify-center items-center w-[90%] md:w-full mx-auto lg:w-[1016px]"
+            >
+               <h4
+                  class="text-center text-3xl md:text-4xl font-[600] text-[#303030]"
+               >
+                  Apa itu Akselerasi Karir?
+               </h4>
+               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+                  Dengan program akselerasi karir tambah pengalaman kerja dan
+                  dapatkan banyak portofolio dengan bimbingan mentor profesional
+                  mulai 0 rupiah!
+               </p>
+               <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-full gap-6 my-16"
+               >
+                  <div
+                     class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
+                  >
+                     <div
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir1.png')] h-[300px] bg-cover lg:bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                     ></div>
+
+                     <div
+                        class="flex flex-col gap-2 items-start text-[#303030] p-5"
+                     >
+                        <h5 class="font-[600] text-[24px]">
+                           Platform Multifungsi
+                        </h5>
+                        <p class="font-[400] text-base text-[#676767]">
+                           Beraktivitas dengan instan dan menyenangkan!
+                           Fasilitas Eduwork mulai dari booking jadwal otomatis
+                           hingga dashboard mentoring.
+                        </p>
+                     </div>
+                  </div>
+                  <div
+                     class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
+                  >
+                     <div
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir2.png')] h-[300px] bg-cover lg:bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                     ></div>
+
+                     <div
+                        class="flex flex-col gap-2 items-start text-[#303030] p-5"
+                     >
+                        <h5 class="font-[600] text-[24px]">
+                           Hustling Anti Ribet
+                        </h5>
+                        <p class="font-[400] text-base text-[#676767]">
+                           Hasilkan double hingga triple income tidak hanya dari
+                           komunitas dan webinar, tapi juga dari live mentoring.
+                        </p>
+                     </div>
+                  </div>
+                  <div
+                     class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
+                  >
+                     <div
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir3.png')] h-[300px] bg-cover lg:bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                     ></div>
+
+                     <div
+                        class="flex flex-col gap-2 items-start text-[#303030] p-5"
+                     >
+                        <h5 class="font-[600] text-[24px]">
+                           Langsung Dapat Klien
+                        </h5>
+                        <p class="font-[400] text-base text-[#676767]">
+                           Percayakan tim marketing kami untuk perluas personal
+                           brand kamu! Profil para mentor baru terbukti mendapat
+                           traffic hingga 30%.
+                        </p>
+                     </div>
+                  </div>
+                  <div
+                     class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
+                  >
+                     <div
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir4.png')] h-[300px] bg-cover lg:bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                     ></div>
+
+                     <div
+                        class="flex flex-col gap-2 items-start text-[#303030] p-5"
+                     >
+                        <h5 class="font-[600] text-[24px]">
+                           Group Mentor Ahli
+                        </h5>
+                        <p class="font-[400] text-base text-[#676767]">
+                           Network = Networth! Mentor-mentor kami berasal dari
+                           startup hingga korporasi; ahli yang punya pengalaman
+                           3+ tahun.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <a
+                  href="#"
+                  class="hover:bg-primary/80 focus:ring-4 text-center focus:outline-none focus:ring-blue-300 w-full sm:w-[250px] text-base font-[600] px-8 py-4 rounded-xl bg-[#187CFF] text-white"
+               >
+                  Mulai sebagai mentor
+               </a>
+            </section>
+         </div>
+      </div>
+      <!-- End of apa itu akselerasi karir2-->
+
+      <!-- live konsultasi -->
+      <section class="pt-10 pb-10 sm:py-24 lg:mt-48 bg-[#F8FCFF]">
+         <div
+            class="relative w-full max-w-[1500px] mx-auto min-w-auto 2xl:min-w-[1306px] h-[730px] md:bg-center lg:bg-[url('assets/lp-penyaluran/bg-live2.png')] bg-[url('assets/lp-penyaluran/bg-live1.png')] bg-left bg-no-repeat bg-cover"
+         >
+            <div
+               class="flex justify-start items-center w-[90%] md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1310px] h-fit mx-auto"
+            >
+               <div class="w-fit h-[680px] pt-[84px]">
+                  <div class="absolute flex flex-col w-[90%] md:!w-[80%] z-30">
+                     <h1
+                        class="font-[700] w-full md:w-[90%] lg:!w-[450px] lg:!pl-12 leading-[120%] text-[30px] md:text-[40px] mx-auto lg:!mx-0 text-left"
+                     >
+                        Live konsultasi sepuasnya setiap hari
+                     </h1>
+                     <div
+                        class="flex-col w-full lg:!w-[418px] h-[233px] lg:!pl-12 mt-[37px] md:mt-[65px]"
+                     >
+                        <div class="w-fit h-fit float-left mr-[14.27px]">
+                           <div
+                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                           >
+                              1
+                           </div>
+                           <div
+                              class="relative flex w-[37.73px] h-[95.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
+                           ></div>
+                           <div
+                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                           >
+                              2
+                           </div>
+                           <div
+                              class="relative flex w-[37.73px] h-[105.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
+                           ></div>
+                           <div
+                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                           >
+                              3
+                           </div>
+                           <div
+                              class="relative flex w-[37.73px] h-[80.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
+                           ></div>
+                        </div>
+                        <div
+                           class="w-full md:w-[418px] h-fit tracking-[0.01em]"
+                        >
+                           <h4
+                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold my-[0px] md:my-0"
+                           >
+                              Konsultasi Perkembangan Skill
+                           </h4>
+                           <p
+                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[31px]"
+                           >
+                              Dapatkan saran dari mentor profesional mengenai
+                              perkembangan skill anda
+                           </p>
+                           <h4
+                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold my-[10px] md:my-0"
+                           >
+                              Konsultasi Pengerjaan Project
+                           </h4>
+                           <p
+                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[30px]"
+                           >
+                              Diskusikan permasalahan project anda bersama para
+                              mentor profesional
+                           </p>
+                           <h4
+                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold mb-[10px] md:mb-0"
+                           >
+                              Konsultasi Rencana Karir
+                           </h4>
+                           <p
+                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[30px]"
+                           >
+                              HR profesional kami siap membantu merencanakan
+                              persiapan karir anda
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="absolute top-0 left-[-16px] w-[200%] md:w-[90%] h-[740px] md:hero-gradasi z-[9] hidden md:block hero-gradasi1"
+            ></div>
+            <div
+               class="hero-gradasi2 absolute top-0 right-[-2px] w-[100%] lg:w-[216px] md:h-[856px] h-[700px]"
+            ></div>
+            <div
+               class="absolute bottom-[-2px] z-[9] w-full h-[53.809px] bg-gradient-to-b from-transparent to-slate-50"
+            ></div>
+            <div
+               class="absolute top-[-2px] z-[9] w-full h-[53.809px] bg-gradient-to-b from-slate-50 to-transparent"
+            ></div>
+
+            <div
+               class="absolute w-full h-fit top-[667px] md:top-[637px] bg-transparent z-20"
+            ></div>
+         </div>
+      </section>
+      <!-- End of live konsultasi -->
+
+      <!-- Alur akselerasi Karir -->
+      <section class="pt-10 pb-10 sm:pb-24 sm:pt-8">
+         <div
+            class="flex flex-col justify-start items-center w-[90%] md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1310px] h-fit mx-auto"
+         >
+            <h2
+               class="text-center text-4xl sm:text-4xl md:text-5xl font-[700] text-[#141414]"
+            >
+               Bagaimana Sih Alur Akselerasi Karir ?
+            </h2>
+            <div class="flex w-full mt-16">
+               <div
+                  class="order-2 md:order-none md:mt-[116px] flex flex-col items-start text-center lg:!text-left md:flex-1 lg:w-[516px]"
+               >
+                  <h4
+                     class="text-left ml-6 md:ml-0 mt-[20px] md:mt-0 sm:text-3xl text-2xl font-[600] lg:font-[500] w-full"
+                     style="line-height: 1.3em"
+                  >
+                     Pendaftaran
+                  </h4>
+                  <div class="block md:hidden ml-6 my-4">
+                     <img
+                        loading="lazy"
+                        class="w-full img-dropshadow"
+                        src="assets/lp-penyaluran/alur1.png"
+                        alt="alur1"
+                     />
+                  </div>
+                  <p
+                     class="md:mb-20 ml-6 md:ml-0 text-left lg:text-[18px] md:text-md text-[16px] font-[400] md:px-0 mt-[14px]"
+                  >
+                     Daftar dengan menghubungi admin kami atau cukup gabung
+                     kelas. Pilih add-on Penyaluran Kerja dengan tarif ramah di
+                     kantong.
+                  </p>
+                  <h4
+                     class="text-left ml-6 md:ml-0 block md:hidden sm:text-3xl text-2xl mt-[20px] font-[600] sm:font-[500] w-full lg:mt-[70px]"
+                     style="line-height: 1.3em"
+                  >
+                     Pelatihan Softskill &amp; Hardskill
+                  </h4>
+                  <div class="md:my-20 ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        loading="lazy"
+                        class="w-full img-dropshadow"
+                        src="assets/lp-penyaluran/alur2.png"
+                        alt="alur1"
+                     />
+                  </div>
+                  <div
+                     class="block ml-6 md:ml-0 md:hidden md:text-md lg:text-[18px] text-[16px] font-[400] mt-[14px] lg:mt-[27px]"
+                  >
+                     <ul class="md:hidden space-y-1 text-gray-500 list-inside">
+                        <li class="flex items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Teori &amp; Praktek
+                        </li>
+                        <li class="flex items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Study Case Real Project
+                        </li>
+                        <li class="flex items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Grup Mentoring
+                        </li>
+                        <li class="flex items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Private Mentor
+                        </li>
+                        <li class="flex items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Team Collaboration
+                        </li>
+                        <li class="flex text-left md:text-right items-center">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Fundamental Management Kerja
+                        </li>
+                     </ul>
+                  </div>
+                  <h4
+                     class="text-left ml-6 md:ml-0 sm:mt-20 sm:text-3xl text-2xl font-[600] sm:font-[500] w-full mt-[20px]"
+                     style="line-height: 1.3em"
+                  >
+                     Career Preparation
+                  </h4>
+                  <div class="ml-6 my-4 block md:hidden md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur3.png"
+                        alt="alur 3"
+                     />
+                  </div>
+                  <div
+                     class="lg:text-[18px] md:text-md text-[16px] font-[400] mt-[14px] lg:mt-[27px] text-left"
+                  >
+                     <ul
+                        class="space-y-1 md:ml-0 ml-6 text-gray-500 list-inside text-left lg:px-0"
+                     >
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Pembuatan CV dan Portofolio menarik
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Pelatihan Interview/Pitching
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Memahami Perusahaan/Klien
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Simulasi Interview/Pitching
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Management Conflict
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Profiling Job Portal
+                        </li>
+                     </ul>
+                  </div>
+
+                  <h4
+                     class="text-left ml-4 md:ml-0 block md:hidden sm:text-3xl text-2xl font-[600] sm:font-[500] w-full lg:mt-[70px] mt-[14px] title-tahapan"
+                     style="line-height: 1.3em"
+                  >
+                     Membangun Personal Branding
+                  </h4>
+                  <div class="md:my-20 ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur4.png"
+                        alt="alur 4"
+                     />
+                  </div>
+                  <div
+                     class="block md:hidden md:ml-0 ml-6 text-[16px] md:text-md lg:text-[18px] font-[400] mt-[14px] lg:mt-[27px] md:text-right"
+                  >
+                     <ul
+                        class="block md:hidden space-y-1 text-gray-500 list-inside"
+                     >
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Linkedin dan Sosial Media
+                        </li>
+                        <li class="flex text-left md:text-right items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Pembuatan Web Pribadi (Freelance)
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Content Creating
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Blogging
+                        </li>
+                     </ul>
+                  </div>
+
+                  <h4
+                     class="text-left ml-4 md:ml-0 text-2xl sm:text-3xl font-[600] sm:font-[500] w-full lg:mt-[57px] mt-[14px]"
+                     style="line-height: 1.3em"
+                  >
+                     Membangun Pengalaman Real
+                  </h4>
+                  <div class="block md:hidden ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur5.png"
+                        alt="alur 5"
+                     />
+                  </div>
+                  <div
+                     class="lg:text-[18px] ml-6 md:ml-0 md:text-md text-[16px] font-[400] mt-[24px] lg:mt-[27px] text-left"
+                  >
+                     <ul
+                        class="space-y-1 text-gray-500 list-inside text-left md:px-0"
+                     >
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Pembuatan CV dan Portofolio menarik
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Pelatihan Interview/Pitching
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Memahami Perusahaan/Klien
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Simulasi Interview/Pitching
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Management Conflict
+                        </li>
+                        <li class="flex items-start">
+                           <img
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                           Profiling Job Portal
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div
+                  class="order-1 md:order-none md:flex-none w-[60px] md:w-[120px] md:block"
+               >
+                  <div
+                     class="h-[1%] md:h-[5%]"
+                     style="width: 2px; margin: 0 auto; position: relative"
+                  >
+                     <div class="text-center">
+                        <div
+                           class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                           style="
+                              position: absolute;
+                              bottom: -40px;
+                              left: 50%;
+                              transform: translateX(-50%);
+                              z-index: 1;
+                           "
+                        >
+                           1
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                     class="h-[19%] md:h-[18.2%]"
+                     style="
+                        width: 2px;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                  ></div>
+
+                  <div class="text-center" style="position: relative">
+                     <div
+                        class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                        style="
+                           position: absolute;
+                           bottom: -40px;
+                           left: 50%;
+                           transform: translateX(-50%);
+                           z-index: 1;
+                        "
+                     >
+                        2
+                     </div>
+                  </div>
+
+                  <div
+                     class="h-[20%] md:h-[18%]"
+                     style="
+                        width: 2px;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                     class="2xl:!h-[17.5%]"
+                  ></div>
+                  <div class="text-center" style="position: relative">
+                     <div
+                        class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                        style="
+                           position: absolute;
+                           bottom: -40px;
+                           left: 50%;
+                           transform: translateX(-50%);
+                           z-index: 1;
+                        "
+                     >
+                        3
+                     </div>
+                  </div>
+                  <div
+                     class="h-[21%] md:h-[23%]"
+                     style="
+                        width: 2px;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                     class="2xl:!h-[24%]"
+                  ></div>
+                  <div class="text-center" style="position: relative">
+                     <div
+                        class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                        style="
+                           position: absolute;
+                           bottom: -40px;
+                           left: 50%;
+                           transform: translateX(-50%);
+                           z-index: 1;
+                        "
+                     >
+                        4
+                     </div>
+                  </div>
+                  <div
+                     class="h-[18%] md:h-[16%]"
+                     style="
+                        width: 2px;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                     class="2xl:!h-[15%]"
+                  ></div>
+                  <div class="text-center" style="position: relative">
+                     <div
+                        class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                        style="
+                           position: absolute;
+                           bottom: -40px;
+                           left: 50%;
+                           transform: translateX(-50%);
+                           z-index: 1;
+                        "
+                     >
+                        5
+                     </div>
+                  </div>
+                  <div
+                     style="
+                        width: 2px;
+                        height: 19%;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                     class="2xl:!h-[19%]"
+                  ></div>
+                  <div class="text-center" style="position: relative">
+                     <div
+                        class="dot w-[48px] h-[48px] flex lg:w-[60px] lg:h-[60px] md:w-[40px] md:h-[40px] lg:!text-[26px] 2xl:text-[30px] md:text-sm button-gradient-custom border-[4.10138px] border-[#e7f7ff] rounded-[82.0276px] shadow-dot text-white text-center justify-center items-center"
+                        style="
+                           position: absolute;
+                           bottom: -40px;
+                           left: 50%;
+                           transform: translateX(-50%);
+                           z-index: 1;
+                        "
+                     >
+                        6
+                     </div>
+                  </div>
+                  <div
+                     style="
+                        width: 2px;
+                        height: 2%;
+                        margin: 0 auto;
+                        border-left: 2px dashed #a3cbff;
+                     "
+                  ></div>
+               </div>
+               <div
+                  class="hidden md:flex-1 md:flex md:flex-col md:items-end lg:w-[516px] md:pt-0 pt-[24px] text-center md:!text-right"
+               >
+                  <div class="md:mb-20 md:mt-10 ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur1.png"
+                        alt="alur1"
+                     />
+                  </div>
+                  <h4
+                     class="sm:text-3xl text-2xl font-[600] sm:font-[500] md:w-full w-full lg:mt-[70px] title-tahapan"
+                     style="line-height: 1.3em"
+                  >
+                     Pelatihan Softskill &amp; Hardskill
+                  </h4>
+                  <div
+                     class="md:text-md lg:text-[18px] text-[16px] font-[400] mt-[14px] lg:mt-[27px]"
+                  >
+                     <ul class="hidden md:block space-y-1 text-gray-500">
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Teori &amp; Praktek
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Study Case Real Project
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Grup Mentoring
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Private Mentor
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Team Collaboration
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li
+                           class="flex items-center md:justify-end ml-4 md:ml-0"
+                        >
+                           Fundamental Management Kerja
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="md:mb-20 md:mt-10 ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur3.png"
+                        alt="alur 3"
+                     />
+                  </div>
+                  <h4
+                     class="lg:text-[42px] md:text-3xl text-[30px] font-[700] w-full lg:mt-[70px] mt-[14px] title-tahapan"
+                     style="line-height: 1.3em"
+                  >
+                     Membangun Personal Branding
+                  </h4>
+                  <div
+                     class="text-[16px] md:text-md lg:text-[18px] font-[400] mt-[14px] lg:mt-[27px] md:text-right"
+                  >
+                     <ul
+                        class="hidden md:block space-y-1 text-gray-500 list-inside"
+                     >
+                        <li class="flex items-center justify-end">
+                           Linkedin dan Sosial Media
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li class="flex items-center justify-end">
+                           Pembuatan Web Pribadi (Freelance)
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li class="flex items-center justify-end">
+                           Content Creating
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                        <li class="flex items-center justify-end">
+                           Blogging
+                           <img
+                              class="ml-2"
+                              src="assets/lp-penyaluran-icon/checkbox.svg"
+                              alt="check"
+                           />
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="md:mb-20 md:mt-10 ml-6 md:ml-0 my-4 md:w-full">
+                     <img
+                        class="w-full img-dropshadow"
+                        loading="lazy"
+                        src="assets/lp-penyaluran/alur5.png"
+                        alt="alur 5"
+                     />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of alur akselerasi karir -->
       <script type="module" src="main.js"></script>
    </body>
 </html>
