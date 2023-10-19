@@ -47,13 +47,20 @@ var swiper = new Swiper(".mySwiper", {
    },
 });
 
-// var swiper = new Swiper(".swiper-alumni-story", {
-//    slidesPerView: 3,
-//    spaceBetween: 30,
-//    centeredSlides: true,
-//    loop: true,
-//    pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//    },
-// });
+var swiper = new Swiper(".swiper-alumni-story", {
+   effect: "coverflow",
+   slidesPerView: "auto",
+   grabCursor: true,
+   centeredSlides: true,
+   spaceBetween: 40,
+   coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+   },
+   pagination: {
+      el: ".swiper-pagination",
+   },
+});
