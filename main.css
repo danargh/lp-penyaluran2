@@ -700,9 +700,9 @@ html {
    .gradasi-sukses-story-left {
       background: linear-gradient(
          90deg,
-         #187cff 20vw,
-         rgba(24, 124, 255, 0.83) 30.77vw,
-         rgba(24, 124, 255, 0) 60.2vw
+         #187cff 20%,
+         rgba(24, 124, 255, 0.83) 30.77%,
+         rgba(24, 124, 255, 0) 60.2%
       );
    }
 }
@@ -710,9 +710,9 @@ html {
    .gradasi-sukses-story-right {
       background: linear-gradient(
          270deg,
-         #187cff 19vw,
-         rgba(24, 124, 255, 0.83) 20.77vw,
-         rgba(24, 124, 255, 0) 26.2vw
+         #187cff 13%,
+         rgba(24, 124, 255, 0.83) 16.77%,
+         rgba(24, 124, 255, 0) 23.2%
       );
    }
 }
