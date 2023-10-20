@@ -689,17 +689,30 @@ html {
    height: 16px;
 }
 
-.gradasi-sukses-story {
+.gradasi-sukses-story-left {
+   background: #187cff;
+}
+.gradasi-sukses-story-right {
    background: #187cff;
 }
 
 @media screen and (min-width: 1024px) {
-   .gradasi-sukses-story {
+   .gradasi-sukses-story-left {
       background: linear-gradient(
          90deg,
-         #187cff 20%,
-         rgba(24, 124, 255, 0.83) 30.77%,
-         rgba(24, 124, 255, 0) 71.2%
+         #187cff 20vw,
+         rgba(24, 124, 255, 0.83) 30.77vw,
+         rgba(24, 124, 255, 0) 60.2vw
+      );
+   }
+}
+@media screen and (min-width: 1024px) {
+   .gradasi-sukses-story-right {
+      background: linear-gradient(
+         270deg,
+         #187cff 19vw,
+         rgba(24, 124, 255, 0.83) 20.77vw,
+         rgba(24, 124, 255, 0) 26.2vw
       );
    }
 }
@@ -827,16 +840,16 @@ html {
    padding-bottom: 50px;
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1016px) {
    #swiper-alumni-story .swiper {
-      width: 1028px;
+      width: 1016px;
    }
 }
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
    #swiper-alumni-story .swiper {
-      width: 1280px;
+      width: 1016px;
    }
-}
+} */
 
 #swiper-alumni-story .swiper-wrapper {
    padding-bottom: 0;

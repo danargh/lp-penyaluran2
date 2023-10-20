@@ -49,6 +49,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".swiper-alumni-story", {
    effect: "coverflow",
+   initialSlide: 3,
    slidesPerView: "auto",
    grabCursor: true,
    centeredSlides: true,
