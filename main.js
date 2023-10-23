@@ -50,10 +50,9 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".swiper-alumni-story", {
    effect: "coverflow",
    initialSlide: 3,
-   slidesPerView: "auto",
    grabCursor: true,
    centeredSlides: true,
-   spaceBetween: 40,
+   spaceBetween: 20,
    coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -63,5 +62,15 @@ var swiper = new Swiper(".swiper-alumni-story", {
    },
    pagination: {
       el: ".swiper-pagination",
+   },
+   breakpoints: {
+      0: {
+         slidesPerView: "auto",
+         spaceBetween: 20,
+      },
+      1028: {
+         slidesPerView: 2.48,
+         spaceBetween: 20,
+      },
    },
 });

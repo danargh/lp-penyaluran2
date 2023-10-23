@@ -317,7 +317,7 @@
       <!-- End Navbar -->
 
       <!-- Hero -->
-      <div class="absolute top-[780px] w-full h-[200px] z-10">
+      <div class="absolute top-[720px] w-full h-[200px] z-10">
          <div class="wave"></div>
       </div>
       <div
@@ -328,13 +328,96 @@
          ></div>
       </div>
       <section
-         class="xl:bg-[url('./assets/lp-penyaluran/bg-hero.png')] bg-white sm:bg-[url('./assets/lp-penyaluran/bg-hero-responsive.png')] bg-no-repeat bg-[top_right_-20rem] md:bg-[top_right_-10rem] min-[1430px]:bg-contain 2xl:bg-bottom xl:bg-center bg-cover"
+         class="bg-white bg-[url('./assets/lp-penyaluran/bg-hero-responsive.png')] bg-no-repeat bg-[top_right_-20rem] md:bg-[top_right_-10rem] min-[1358px]:bg-contain 2xl:bg-bottom xl:bg-center bg-cover"
       >
          <div class="mx-auto m-0">
-            <div id="Hero" class="lg:mt-20 mt-14 w-full h-[900px]">
+            <div id="Hero" class="lg:mt-20 mt-14 w-full h-[820px]">
                <div
-                  class="w-[90%] md:max-w-[1024px] h-fit xl:max-w-[1016px] mx-auto py-4 md:py-4"
+                  class="relative w-[90%] h-full md:max-w-[1016px] mx-auto py-4 md:py-4"
                >
+                  <div
+                     class="absolute lg:block hidden top-[24px] right-[300px]"
+                  >
+                     <div
+                        class="relative w-[300px] h-[200px] hero-card-custom-img-shadow"
+                     >
+                        <div
+                           class="absolute max-w-[280px] rounded-[14px] bg-white z-10 flex gap-x-4 p-2"
+                        >
+                           <img
+                              class="w-[48px] h-[48px]"
+                              src="assets/lp-penyaluran/hero/avatar-hero3.png"
+                              alt="hero 3"
+                           />
+                           <div class="flex flex-col gap-y-1">
+                              <h4 class="font-[600] text-base">
+                                 Fadjran Gibran
+                              </h4>
+                              <p class="text-sm font-[400] text-[#303030]">
+                                 UI/UX Designer
+                              </p>
+                           </div>
+                        </div>
+                        <div
+                           class="absolute max-w-[280px] rounded-[12px] top-[40px] left-[30px] bg-white z-10 flex gap-x-4 p-4"
+                        >
+                           <img
+                              class="w-[48px] h-[48px]"
+                              src="assets/lp-penyaluran/hero/avatar-hero2.png"
+                              alt="hero 3"
+                           />
+                           <div class="flex flex-col gap-y-1">
+                              <h4 class="font-[600] text-base">
+                                 Naufal Hafidz
+                              </h4>
+                              <p class="text-sm font-[400] text-[#303030]">
+                                 Backend Developer
+                              </p>
+                           </div>
+                        </div>
+                        <div
+                           class="absolute max-w-[280px] rounded-[12px] top-[80px] left-[60px] bg-white z-10 flex gap-x-4 p-4"
+                        >
+                           <img
+                              class="w-[48px] h-[48px]"
+                              src="assets/lp-penyaluran/hero/avatar-hero1.png"
+                              alt="hero 3"
+                           />
+                           <div class="flex flex-col gap-y-1">
+                              <h4 class="font-[600] text-base">
+                                 Masari Pras Tyo
+                              </h4>
+                              <p class="text-sm font-[400] text-[#303030]">
+                                 Quality Assurance
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="absolute lg:flex hidden max-w-[250px] max-h-[160px] rounded-[12px] bg-white hero-card-custom-shadow z-10 right-[0] bottom-[300px] flex-col gap-y-2 p-4"
+                  >
+                     <h4 class="font-[500] text-xl">Fadjran Gibran</h4>
+                     <p class="text-xs font-[400] text-[#303030]">
+                        UI/UX Designer
+                        <br />
+                        PT Ordivo Teknologi Indonesia
+                     </p>
+                  </div>
+                  <div
+                     class="absolute lg:flex hidden max-w-[250px] max-h-[160px] rounded-[12px] bg-white hero-card-custom-shadow z-10 left-[480px] bottom-[200px] flex-col gap-y-2 p-4"
+                  >
+                     <img
+                        class="w-6 h-6"
+                        src="assets/lp-penyaluran/hero/ri_double-quotes-l.svg"
+                        alt="quote icon"
+                     />
+                     <p class="text-xs font-[400] text-[#303030]">
+                        Saya lulusan manajemen pemasaran, namun berkat latihan
+                        dan kerja keras saat belajar di Eduwork sekarang saya
+                        berkarir sebagai UI/UX Designer
+                     </p>
+                  </div>
                   <div class="lg:w-[420px] w-fit h-[600px] pt-[80px]">
                      <div
                         class="relative flex flex-col gap-y-4 w-full md:w-[100%] z-30"
@@ -367,21 +450,21 @@
                         >
                            <div class="pr-6 border-r-2 border-r-slate-300">
                               <h4 class="font-[700] text-[#187CFF] text-[28px]">
-                                 1691+
+                                 1800+
                               </h4>
-                              <p class="font-[500] text-sm">Member bergabung</p>
+                              <p class="font-[500] text-sm">Siswa</p>
                            </div>
                            <div class="pr-6 border-r-2 border-r-slate-300">
                               <h4 class="font-[700] text-[#187CFF] text-[28px]">
-                                 59+
+                                 180+
                               </h4>
-                              <p class="font-[500] text-sm">Mentor Aktif</p>
+                              <p class="font-[500] text-sm">Tersalurkan</p>
                            </div>
                            <div>
                               <h4 class="font-[700] text-[#187CFF] text-[28px]">
-                                 136Juta+
+                                 150+
                               </h4>
-                              <p class="font-[500] text-sm">Profit Sharing</p>
+                              <p class="font-[500] text-sm">Hiring Partner</p>
                            </div>
                         </div>
 
@@ -423,7 +506,7 @@
 
       <!-- PARTNER -->
       <section
-         class="w-[90%] mt-[-100px] relative z-20 md:max-w-[1024px] lg:max-w-[1016px] mx-auto pb-10 sm:pb-20 md:pb-24 lg:pb-20"
+         class="w-[90%] mt-[-80px] relative z-20 md:max-w-[1024px] lg:max-w-[1016px] mx-auto pb-10 sm:pb-20 md:pb-24 lg:pb-20"
       >
          <div class="mx-auto h-fit">
             <div class="z-10 flex flex-col lg:flex-row">
@@ -432,8 +515,9 @@
                      class="w-full lg:text-left lg:w-[240px] h-[70px] text-center text-[24px] font-medium leading-[28.56px] mr-[37px] md:mr-[20px]"
                   >
                      <span class="text-[36px] font-[600] text-[#187cff]"
-                        >Our 100+ </span
-                     >Business Partner
+                        >Our 100+
+                     </span>
+                     Business Partner
                   </h4>
                </div>
                <div class="slider w-full overflow-hidden">
@@ -648,7 +732,7 @@
                <div class="my-10 flex flex-col gap-y-6 relative">
                   <div class="flex justify-center gap-6 flex-wrap">
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-purple-100">
                            <img
@@ -666,7 +750,7 @@
                         </div>
                      </div>
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-purple-100">
                            <img
@@ -679,13 +763,13 @@
                               Programmer : Laravel & VueJs
                            </h6>
                            <p class="text-sm font-[400]">
-                              Programmer : Laravel & VueJs
+                              Fullstack PHP & Javascript based
                            </p>
                         </div>
                      </div>
 
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-purple-100">
                            <img
@@ -701,7 +785,7 @@
                         </div>
                      </div>
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-blue-100">
                            <img
@@ -719,7 +803,7 @@
                         </div>
                      </div>
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-orange-100">
                            <img
@@ -738,7 +822,7 @@
                      </div>
 
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-green-100">
                            <img
@@ -756,7 +840,7 @@
                         </div>
                      </div>
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-red-100">
                            <img
@@ -774,7 +858,7 @@
                         </div>
                      </div>
                      <div
-                        class="flex items-center gap-4 py-5 px-8 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
+                        class="flex items-center gap-4 py-5 px-4 sm:w-auto w-full bg-white shadow-box-custom rounded-2xl"
                      >
                         <div class="p-[10px] rounded-full bg-teal-100">
                            <img
@@ -1033,75 +1117,60 @@
                <div class="w-fit h-[680px] pt-[84px]">
                   <div class="absolute flex flex-col w-[90%] md:!w-[80%] z-30">
                      <h1
-                        class="font-[700] w-full md:w-[100%] lg:!w-[450px] leading-[120%] text-[30px] md:text-[40px] mx-auto lg:!mx-0 text-left"
+                        class="font-[700] w-full md:w-[100%] lg:!w-[450px] leading-[120%] text-[30px] sm:text-[40px] mx-auto lg:!mx-0 text-left"
                      >
                         Live konsultasi sepuasnya setiap hari
                      </h1>
                      <div
-                        class="flex-col w-full lg:!w-[418px] h-[233px] mt-[37px] md:mt-[65px]"
+                        class="w-full sm:max-w-[400px] flex flex-col mt-10 md:mt-6 gap-y-4"
                      >
-                        <div class="w-fit h-fit float-left mr-[14.27px]">
+                        <div class="flex gap-x-4 items-start">
                            <div
-                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                              class="p-4 bg-primary flex flex-none rounded-full w-[36px] text-white h-[36px] justify-center items-center"
                            >
                               1
                            </div>
+                           <div class="flex flex-col gap-y-2">
+                              <h5 class="text-xl font-[600]">
+                                 Mentoring Perkembangan Skill
+                              </h5>
+                              <p class="text-base font-[400] text-[#303030]">
+                                 Dapatkan saran dari mentor profesional mengenai
+                                 perkembangan skill Anda
+                              </p>
+                           </div>
+                        </div>
+                        <div class="flex gap-x-4 items-start">
                            <div
-                              class="relative flex w-[37.73px] h-[95.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
-                           ></div>
-                           <div
-                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                              class="p-4 bg-primary flex flex-none rounded-full w-[36px] text-white h-[36px] justify-center items-center"
                            >
                               2
                            </div>
+                           <div class="flex flex-col gap-y-2">
+                              <h5 class="text-xl font-[600]">
+                                 Mentoring Pengerjaan Project
+                              </h5>
+                              <p class="text-base font-[400] text-[#303030]">
+                                 Mentor profesional siap membantu dan berdiskusi
+                                 terkait permasalahan project Anda
+                              </p>
+                           </div>
+                        </div>
+                        <div class="flex gap-x-4 items-start">
                            <div
-                              class="relative flex w-[37.73px] h-[105.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
-                           ></div>
-                           <div
-                              class="dot flex md:w-[37.73px] w-[30.73px] md:h-[36.09px] h-[29.09px] bg-[#187CFF] rounded-[82.0276px] mb-[6px] shadow-dot text-white text-center py-[8.20276px 16.4055px] justify-center items-center gap-[8.2px] drop-shadow-xl"
+                              class="p-4 bg-primary flex flex-none rounded-full w-[36px] text-white h-[36px] justify-center items-center"
                            >
                               3
                            </div>
-                           <div
-                              class="relative flex w-[37.73px] h-[80.38px] md:h-[50.38px] text-center my-[8.20276px 16.4055px] justify-center items-center"
-                           ></div>
-                        </div>
-                        <div
-                           class="w-full md:w-[418px] h-fit tracking-[0.01em]"
-                        >
-                           <h4
-                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold my-[0px] md:my-0"
-                           >
-                              Konsultasi Perkembangan Skill
-                           </h4>
-                           <p
-                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[31px]"
-                           >
-                              Dapatkan saran dari mentor profesional mengenai
-                              perkembangan skill anda
-                           </p>
-                           <h4
-                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold my-[10px] md:my-0"
-                           >
-                              Konsultasi Pengerjaan Project
-                           </h4>
-                           <p
-                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[30px]"
-                           >
-                              Diskusikan permasalahan project anda bersama para
-                              mentor profesional
-                           </p>
-                           <h4
-                              class="leading-[24px] text-[20px] md:text-[16px] font-semibold mb-[10px] md:mb-0"
-                           >
-                              Konsultasi Rencana Karir
-                           </h4>
-                           <p
-                              class="text-[#4E5053] text-[16px] md:text-[14px] font-normal leading-[21px] mb-[19px] md:mb-[30px]"
-                           >
-                              HR profesional kami siap membantu merencanakan
-                              persiapan karir anda
-                           </p>
+                           <div class="flex flex-col gap-y-2">
+                              <h5 class="text-xl font-[600]">
+                                 Mentoring Rencana Karir
+                              </h5>
+                              <p class="text-base font-[400] text-[#303030]">
+                                 HR Profesional kami siap membantu merencanakan
+                                 karir Anda
+                              </p>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -1865,7 +1934,7 @@
                   class="order-2 md:order-none md:mt-[116px] flex flex-col items-start text-center lg:!text-left md:flex-1"
                >
                   <h4
-                     class="text-left ml-6 md:ml-0 pt-[20px] md:pt-[100px] md:mt-0 sm:text-3xl text-2xl font-[600] lg:font-[500] w-[200px]"
+                     class="text-left ml-6 md:ml-0 pt-[20px] md:pt-[100px] md:mt-0 sm:text-3xl text-2xl font-[600] lg:font-[500] w-full"
                      style="line-height: 1.3em"
                   >
                      Bantuan Proses Interview
@@ -2856,12 +2925,130 @@
                         />
                      </td>
 
-                     <td class="bg-[#3F85EC] rounded-b-3xl">
+                     <td class="bg-[#3F85EC]">
                         <img
                            class="mx-auto w-[20px] sm:w-[24px]"
                            src="assets/lp-penyaluran-icon/check.svg"
                            alt=""
                         />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold"
+                     >
+                        Konsultasi Career Support
+                     </td>
+                     <td class="bg-white">
+                        <img
+                           class="mx-auto w-[20px] sm:w-[24px]"
+                           src="assets/lp-penyaluran-icon/close.svg"
+                           alt=""
+                        />
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Setiap hari (di jam tertentu)
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold bg-[#EBF3FF] rounded-l-[12px]"
+                     >
+                        Porto Study Case
+                     </td>
+                     <td class="bg-[#EBF3FF]">
+                        <img
+                           class="mx-auto w-[20px] sm:w-[24px]"
+                           src="assets/lp-penyaluran-icon/close.svg"
+                           alt=""
+                        />
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Unlimited
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold"
+                     >
+                        Pengalaman Magang
+                     </td>
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px]"
+                     >
+                        3 bulan
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Unlimited
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold bg-[#EBF3FF] rounded-l-[12px]"
+                     >
+                        Pengalaman Real Project Based
+                     </td>
+                     <td class="bg-[#EBF3FF]">
+                        <img
+                           class="mx-auto w-[20px] sm:w-[24px]"
+                           src="assets/lp-penyaluran-icon/close.svg"
+                           alt=""
+                        />
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Unlimited
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold"
+                     >
+                        Skill Managerial
+                     </td>
+                     <td>
+                        <img
+                           class="mx-auto w-[20px] sm:w-[24px]"
+                           src="assets/lp-penyaluran-icon/close.svg"
+                           alt=""
+                        />
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Unlimited
+                     </td>
+                  </tr>
+                  <tr>
+                     <td
+                        class="text-left h-full p-2 sm:p-5 justify-start text-[14px] sm:text-[16px] font-semibold bg-[#EBF3FF] rounded-l-[12px]"
+                     >
+                        Pengalaman Speaker
+                     </td>
+                     <td class="bg-[#EBF3FF]">
+                        <img
+                           class="mx-auto w-[20px] sm:w-[24px]"
+                           src="assets/lp-penyaluran-icon/close.svg"
+                           alt=""
+                        />
+                     </td>
+
+                     <td
+                        class="p-2 sm:p-5 font-[500] rounded-b-3xl text-[14px] sm:text-[16px] text-white bg-[#3F85EC]"
+                     >
+                        Unlimited
                      </td>
                   </tr>
                </tbody>
@@ -2873,7 +3060,7 @@
       <!-- Succes Story Alumni -->
       <section class="pt-4 pb-10 sm:pt-0 sm:pb-24">
          <div
-            class="relative h-[910px] bg-none lg:bg-[url('assets/lp-penyaluran/bg-sukses-story.png')] bg-no-repeat min-[1440px]:bg-contain bg-center bg-cover bg-primary"
+            class="relative h-[680px] bg-none lg:bg-[url('assets/lp-penyaluran/bg-sukses-story.png')] bg-no-repeat min-[1440px]:bg-contain bg-center bg-cover bg-primary"
          >
             <div
                class="z-[10] absolute w-full h-full gradasi-sukses-story-left"
@@ -2885,22 +3072,22 @@
                class="relative pt-20 pb-0 flex justify-start w-[90%] lg:w-[90%] xl:w-[90%] md:max-w-[1016px] h-fit mx-auto"
             >
                <div
-                  class="flex relative z-20 flex-col gap-y-12 text-white max-w-[550px]"
+                  class="flex relative z-20 flex-col gap-y-8 text-white max-w-[550px]"
                >
-                  <h4 class="text-2xl sm:text-4xl font-[500]">
+                  <h4 class="text-2xl sm:text-2xl font-[500]">
                      Alumni Success Story
                   </h4>
                   <q
-                     class="text-2xl sm:text-3xl md:text-[44px] md:leading-[52px] font-[700]"
+                     class="text-2xl sm:text-2xl md:text-[32px] md:leading-[48px] font-[700]"
                      >Mengawali karir dari IT Support dan part time Frontend.
                      Melalui Eduwork, saya dapat mentor yang baik dan sekarang
                      menjadi QA dengan gaji 6 juta +
                   </q>
                   <div class="flex flex-col gap-y-2">
-                     <h5 class="text-xl sm:text-3xl font-[600]">
+                     <h5 class="text-xl sm:text-2xl font-[600]">
                         Masari Pras Tyo
                      </h5>
-                     <p class="text-lg sm:text-xl font-[400]">
+                     <p class="text-lg sm:text-lg font-[400]">
                         Quality Assurance | PT.Swakarya Insan Mandiri
                      </p>
                   </div>
@@ -2911,7 +3098,7 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -2922,14 +3109,14 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Fadjrian Gibran
                               </h4>
                               <p class="text-base text-primary">
                                  UI/UX Designer at Ordivo Teknologi
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Seneng belajar di eduwork, kelasnya bisa diakses
                               sepuasnya. Kelas diajar oleh mentor yang sabar dan
                               pengertian
@@ -2938,7 +3125,7 @@
                      </div>
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -2949,14 +3136,14 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Rini Rahmawati
                               </h4>
                               <p class="text-base text-primary">
                                  Digital Marketing at Adhigana Perkasa
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Dari proses mentoring, handling project sampai ke
                               proses penyaluran semuanya jelas, kita tinggal
                               mengikuti alurnya.
@@ -2965,7 +3152,7 @@
                      </div>
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -2976,14 +3163,14 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Muhammad Alif Gunadi
                               </h4>
                               <p class="text-base text-primary">
                                  Software Developer at Ravelware Tech
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Bagus untuk belajar dari awal di dunia pemrograman
                               terlebih MERN stack nya. Terima kasih Eduwork
                            </p>
@@ -2991,7 +3178,7 @@
                      </div>
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -3002,14 +3189,14 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Lintang Vienusa
                               </h4>
                               <p class="text-base text-primary">
                                  Backend Developer at Agile Technical
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Tidak hanya belajar teknis sesuai kurikulum, juga
                               diajarkan skill untuk survive di tech industri dan
                               personal branding
@@ -3018,7 +3205,7 @@
                      </div>
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -3029,21 +3216,21 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Anisya Firdha Khairani
                               </h4>
                               <p class="text-base text-primary">
                                  Frontend Developer at Sagara Technology
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Materi oke, mentor oke, sangat recommended!
                            </p>
                         </div>
                      </div>
                      <div class="swiper-slide bg-none p-5">
                         <div
-                           class="flex flex-col h-full w-full p-7 gap-y-6 shadow-lg bg-white rounded-3xl"
+                           class="flex flex-col h-full w-full p-5 gap-y-6 shadow-lg bg-white rounded-3xl"
                         >
                            <div class="h-[230px]">
                               <img
@@ -3054,14 +3241,14 @@
                            </div>
 
                            <div class="flex flex-col gap-y-1">
-                              <h4 class="text-3xl font-[700] text-black">
+                              <h4 class="text-2xl font-[700] text-black">
                                  Fadjrian Gibran
                               </h4>
                               <p class="text-base text-primary">
                                  UI/UX Designer at Ordivo Teknologi
                               </p>
                            </div>
-                           <p class="text-xl text-[#737373]">
+                           <p class="text-lg text-[#737373]">
                               Seneng belajar di eduwork, kelasnya bisa diakses
                               sepuasnya. Kelas diajar oleh mentor yang sabar dan
                               pengertian
@@ -3113,14 +3300,431 @@
       <section class="pt-14 pb-16 md:pb-24 bg-white">
          <div class="mx-auto">
             <div
-               class="relative w-[90%] mx-auto h-fit lg:w-[1016px] lg:h-[581px] z-10"
+               class="w-[90%] mx-auto h-fit lg:max-w-[1016px] lg:h-[581px] z-10"
             >
                <h4
-                  class="text-center relative z-30 mb-12 text-3xl md:text-4xl font-[600] text-[#303030]"
+                  class="text-center relative z-20 mb-12 text-3xl md:text-4xl font-[600] text-[#303030]"
                >
                   FAQ
                </h4>
+               <div
+                  class="bg-white w-full grid grid-cols-1 lg:grid-cols-2 gap-x-8"
+                  x-data="{selected:1}"
+               >
+                  <ul
+                     class="shadow-box flex flex-col justify-start gap-x-8 gap-y-3 sm:gap-y-6"
+                  >
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 1 ? selected = 1 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Book.png"
+                                    alt="book icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Apa itu Program Jaminan Kerja?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 1 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 1 ? 'max-height: 500px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 adalah program yang membantu kamu mendapat
+                                 pekerjaan sesuai dengan minat karir kamu lho.
+                                 Kamu juga mendapat materi dan bimbingan dari
+                                 mentor langsung
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 2 ? selected = 2 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Enter.png"
+                                    alt="book icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Panduan Pendaftaran
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 2 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 2 ? 'max-height: 500px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <div class="text-base font-[400]">
+                                 <b>Cara Mendaftar</b> <br />
+                                 <ul style="list-style-type: circle">
+                                    <li>
+                                       Silahkan mendaftar dengan cara input
+                                       email kamu pada kolom pendaftaran sebelah
+                                       kiri atas.
+                                    </li>
+                                    <li>Lalu pilih tipe Akselerasi Karirnya</li>
+                                    <li>Mengisi form pendaftaranya</li>
+                                    <li>Pilih metode pembayaran</li>
+                                    <li>Submit</li>
+                                 </ul>
+                                 <p>
+                                    Jika sudah mohon ditunggu dihubungi admin
+                                    melakukan interview untuk melanjutkan
+                                    pendaftarannya yaaa!
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 3 ? selected = 3 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Cheque.png"
+                                    alt="cheque icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Apakah ada Persyaratan?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 3 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 3 ? 'max-height: 500px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Tidak ada persyaratan khusus untuk mendaftar di
+                                 eduwork.id yaa! Yuk langsung daftar sekarang!
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 4 ? selected = 4 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Multiple Choice.png"
+                                    alt="multiple choice icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Proses Seleksi Pendaftaran
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 4 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-700"
+                           x-ref="container1"
+                           x-bind:style="selected == 4 ? 'max-height: 500px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Untuk pendaftaran ISA akan diseleksi
+                                 berdasarkan jaminan yang diberikan oleh siswa.
+                                 Untuk Cash/Cicilan tidak ada seleksi khusus.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul
+                     class="shadow-box flex flex-col justify-start gap-x-8 gap-y-3 sm:gap-y-6 mt-6 lg:mt-0"
+                  >
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 5 ? selected = 5 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <!-- rotate when open -->
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Class.png"
+                                    alt="class icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Apakah Benar Dijamin 100% Dapat Kerja?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected ===5 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 5 ? 'max-height: 300px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Tentu saja benar! Dengan eduwork kamu akan
+                                 dibantu mendapatkan pekerjaan impian kamu,
+                                 bahkan kamu juga bisa dapat project untuk
+                                 menambah portofolio kamu
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 6 ? selected = 6 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Multiple Choice.png"
+                                    alt="multiple choice icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Bisakah untuk yang belum memiliki skill?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 6 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Tentu saja bisa, kamu akan mendapat materi
+                                 kelas sesuai dengan minat karirmu serta dapat
+                                 pendampingan untuk mengoptimalkan skillmu 
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 7 ? selected = 7 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Cheque.png"
+                                    alt="cheque icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">Apa itu ISA?</p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 7 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-700"
+                           x-ref="container1"
+                           x-bind:style="selected == 7 ? 'max-height: 300px'  : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 ISA merupakan program dimana kalian bisa ikut
+                                 program akselerasi dulu, bayarnya nanti kalau
+                                 kalian sudah memiliki penghasilan. Jadi seperti
+                                 paylater yaa kak.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 8 ? selected = 8 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Book.png"
+                                    alt="book icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Bagaimana syarat minimal device?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 8 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 8 ? 'max-height: 300px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Kalian bisa mengikuti program ini bisa
+                                 menggunakan Laptop/PC yang menunjang karir &
+                                 pengerjaan project.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 9 ? selected = 9 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Static View Level2.png"
+                                    alt="book icon"
+                                 />
+                              </div>
+                              <p class="text-xl font-[400]">
+                                 Bagaimana jika bingung membuat CV dan interview
+                                 ?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 9 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 9 ? 'max-height: 300px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Konsultasikan kesulitan kalian dengan Career
+                                 Support di Eduwork! Bisa konsultasi setiap hari
+                                 sepuasnya!
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
+            <div class="ml-8"></div>
          </div>
       </section>
       <!-- End of FAQ -->
