@@ -328,7 +328,7 @@
          ></div>
       </div>
       <section
-         class="bg-white bg-[url('./assets/lp-penyaluran/bg-hero-responsive.png')] bg-no-repeat bg-[top_right_-20rem] md:bg-[top_right_-10rem] min-[1358px]:bg-contain 2xl:bg-bottom xl:bg-center bg-cover"
+         class="bg-white md:bg-[url('./assets/lp-penyaluran/bg-hero-responsive.png')] bg-no-repeat bg-[top_right_-20rem] md:bg-[top_right_-10rem] min-[1358px]:bg-contain 2xl:bg-bottom xl:bg-center bg-cover"
       >
          <div class="mx-auto m-0">
             <div id="Hero" class="lg:mt-20 mt-14 w-full h-[820px]">
@@ -446,22 +446,28 @@
                            </p>
                         </div>
                         <div
-                           class="flex justify-start gap-6 my-6 md:flex-nowrap flex-wrap"
+                           class="flex justify-between min-[360px]:justify-start min-[360px]:gap-6 my-6 flex-nowrap"
                         >
                            <div class="pr-6 border-r-2 border-r-slate-300">
-                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                              <h4
+                                 class="font-[700] text-[#187CFF] text-xl sm:text-[28px]"
+                              >
                                  1800+
                               </h4>
                               <p class="font-[500] text-sm">Siswa</p>
                            </div>
                            <div class="pr-6 border-r-2 border-r-slate-300">
-                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                              <h4
+                                 class="font-[700] text-[#187CFF] text-xl sm:text-[28px]"
+                              >
                                  180+
                               </h4>
                               <p class="font-[500] text-sm">Tersalurkan</p>
                            </div>
                            <div>
-                              <h4 class="font-[700] text-[#187CFF] text-[28px]">
+                              <h4
+                                 class="font-[700] text-[#187CFF] text-xl sm:text-[28px]"
+                              >
                                  150+
                               </h4>
                               <p class="font-[500] text-sm">Hiring Partner</p>
@@ -634,10 +640,10 @@
                   </p>
                   <div class="relative">
                      <div
-                        class="lg:absolute w-full lg:max-w-[900px] h-fit mt-[23.3px] flex flex-col md:grid md:grid-cols-2 gap-[16px]"
+                        class="lg:absolute w-full lg:max-w-[900px] h-fit mt-[23.3px] flex flex-col md:grid md:grid-cols-2 gap-[10px]"
                      >
                         <div
-                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                           class="flex flex-col w-full gap-y-4 p-4 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
                         >
                            <div class="text-left">
                               <h4 class="font-[700] text-[20px] mb-[5px]">
@@ -672,7 +678,7 @@
                            </div>
                         </div>
                         <div
-                           class="flex flex-col w-full gap-y-4 p-6 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
+                           class="flex flex-col w-full gap-y-4 p-4 rounded-[16px] bg-[#ffffff] ISA-card border border-[#E0E0E0]"
                         >
                            <div class="text-left">
                               <h4 class="font-[700] text-[20px] mb-[5px]">
@@ -3087,7 +3093,7 @@
                      <h5 class="text-xl sm:text-2xl font-[600]">
                         Masari Pras Tyo
                      </h5>
-                     <p class="text-lg sm:text-lg font-[400]">
+                     <p class="text-lg sm:text-lg leading-[20px] font-[400]">
                         Quality Assurance | PT.Swakarya Insan Mandiri
                      </p>
                   </div>
@@ -3264,7 +3270,9 @@
       <!-- End of alumni Success Story -->
 
       <!-- reedem voucher -->
-      <section class="mt-72 pb-10 sm:mt-96 sm:pb-24">
+      <section
+         class="pb-10 mt-72 sm:mt-96 pt-20 sm:pb-24 bg-[url(assets/lp-penyaluran/bg-code-voucher.png)] bg-no-repeat bg-cover"
+      >
          <div
             class="flex flex-col justify-start items-center w-[90%] md:max-w-[1016px] h-fit mx-auto"
          >
@@ -3273,6 +3281,32 @@
             >
                Masukan Kode Voucher Kamu!
             </h2>
+
+            <div class="flex flex-col justify-center items-center gap-y-8">
+               <form class="h-[60px] w-[940px]" action="#">
+                  <input
+                     class="bg-white text-center w-full text-2xl font-[500] border-[3px] h-full rounded-[18px] border-primary"
+                     type="text"
+                  />
+               </form>
+
+               <p class="text-2xl font-[400]">
+                  Selamat, khusus hari ini dapat gratis kelas dan potongan harga
+                  <span class="text-3xl font-[700]">Rp.500.000</span>
+               </p>
+
+               <div class="relative">
+                  <p class="price-cross-out text-2xl font-[400] text-[#6B7280]">
+                     Rp.1.500.000
+                  </p>
+               </div>
+
+               <div
+                  class="bg-primary rounded-lg py-2 px-8 text-[50px] font-[600]"
+               >
+                  <p>Rp.1.000.000</p>
+               </div>
+            </div>
 
             <div
                class="py-[20px] mt-4 sm:mt-16 flex items-center w-full md:w-[350px]"
@@ -3309,7 +3343,7 @@
                </h4>
                <div
                   class="bg-white w-full grid grid-cols-1 lg:grid-cols-2 gap-x-8"
-                  x-data="{selected:1}"
+                  x-data="{selected: null}"
                >
                   <ul
                      class="shadow-box flex flex-col justify-start gap-x-8 gap-y-3 sm:gap-y-6"
@@ -3331,7 +3365,7 @@
                                     alt="book icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Apa itu Program Jaminan Kerja?
                               </p>
                            </div>
@@ -3375,7 +3409,7 @@
                                     alt="book icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Panduan Pendaftaran
                               </p>
                            </div>
@@ -3432,7 +3466,7 @@
                                     alt="cheque icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Apakah ada Persyaratan?
                               </p>
                            </div>
@@ -3474,7 +3508,7 @@
                                     alt="multiple choice icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Proses Seleksi Pendaftaran
                               </p>
                            </div>
@@ -3500,10 +3534,6 @@
                            </div>
                         </div>
                      </li>
-                  </ul>
-                  <ul
-                     class="shadow-box flex flex-col justify-start gap-x-8 gap-y-3 sm:gap-y-6 mt-6 lg:mt-0"
-                  >
                      <li
                         class="relative bg-white rounded-2xl shadow-box-custom"
                      >
@@ -3516,18 +3546,64 @@
                               <div
                                  class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
                               >
-                                 <!-- rotate when open -->
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Class.png"
+                                    alt="multiple choice icon"
+                                 />
+                              </div>
+                              <p class="text-lg leading-[20px] font-[400]">
+                                 Bagaimana status karyawan penyaluran?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 5 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-700"
+                           x-ref="container1"
+                           x-bind:style="selected == 5 ? 'max-height: 500px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Utamanya kamu akan disalurkan untuk posisi
+                                 Fulltime, ada juga posisi Magang untuk menambah
+                                 kerjamu dan juga ada freelance
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul
+                     class="shadow-box flex flex-col justify-start gap-x-8 gap-y-3 sm:gap-y-6 mt-6 lg:mt-0"
+                  >
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 6 ? selected = 6 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
                                  <img
                                     src="assets/lp-penyaluran-icon/faq/Class.png"
                                     alt="class icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Apakah Benar Dijamin 100% Dapat Kerja?
                               </p>
                            </div>
                            <img
-                              :class="{ 'rotate-180 transition-transform': selected ===5 }"
+                              :class="{ 'rotate-180 transition-transform': selected === 6 }"
                               class="mr-2"
                               src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
                               alt="cevron down"
@@ -3537,7 +3613,7 @@
                         <div
                            class="relative overflow-hidden transition-all max-h-0 duration-500"
                            x-ref="container1"
-                           x-bind:style="selected == 5 ? 'max-height: 300px' : ''"
+                           x-bind:style="selected == 6 ? 'max-height: 300px' : ''"
                         >
                            <div class="pr-8 pl-[78px] pt-0 pb-4">
                               <p class="text-base font-[400]">
@@ -3555,7 +3631,7 @@
                         <button
                            type="button"
                            class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
-                           @click="selected !== 6 ? selected = 6 : selected = null"
+                           @click="selected !== 7 ? selected = 7 : selected = null"
                         >
                            <div class="flex items-center gap-x-4">
                               <div
@@ -3566,50 +3642,9 @@
                                     alt="multiple choice icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
+                              <p class="text-lg leading-[20px] font-[400]">
                                  Bisakah untuk yang belum memiliki skill?
                               </p>
-                           </div>
-                           <img
-                              :class="{ 'rotate-180 transition-transform': selected === 6 }"
-                              class="mr-2"
-                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
-                              alt="cevron down"
-                           />
-                        </button>
-
-                        <div
-                           class="relative overflow-hidden transition-all max-h-0 duration-500"
-                           x-ref="container1"
-                           x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                        >
-                           <div class="pr-8 pl-[78px] pt-0 pb-4">
-                              <p class="text-base font-[400]">
-                                 Tentu saja bisa, kamu akan mendapat materi
-                                 kelas sesuai dengan minat karirmu serta dapat
-                                 pendampingan untuk mengoptimalkan skillmu 
-                              </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li
-                        class="relative bg-white rounded-2xl shadow-box-custom"
-                     >
-                        <button
-                           type="button"
-                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
-                           @click="selected !== 7 ? selected = 7 : selected = null"
-                        >
-                           <div class="flex items-center gap-x-4">
-                              <div
-                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
-                              >
-                                 <img
-                                    src="assets/lp-penyaluran-icon/faq/Cheque.png"
-                                    alt="cheque icon"
-                                 />
-                              </div>
-                              <p class="text-xl font-[400]">Apa itu ISA?</p>
                            </div>
                            <img
                               :class="{ 'rotate-180 transition-transform': selected === 7 }"
@@ -3620,16 +3655,15 @@
                         </button>
 
                         <div
-                           class="relative overflow-hidden transition-all max-h-0 duration-700"
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
                            x-ref="container1"
-                           x-bind:style="selected == 7 ? 'max-height: 300px'  : ''"
+                           x-bind:style="selected == 7 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
                         >
                            <div class="pr-8 pl-[78px] pt-0 pb-4">
                               <p class="text-base font-[400]">
-                                 ISA merupakan program dimana kalian bisa ikut
-                                 program akselerasi dulu, bayarnya nanti kalau
-                                 kalian sudah memiliki penghasilan. Jadi seperti
-                                 paylater yaa kak.
+                                 Tentu saja bisa, kamu akan mendapat materi
+                                 kelas sesuai dengan minat karirmu serta dapat
+                                 pendampingan untuk mengoptimalkan skillmu 
                               </p>
                            </div>
                         </div>
@@ -3647,12 +3681,12 @@
                                  class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
                               >
                                  <img
-                                    src="assets/lp-penyaluran-icon/faq/Book.png"
-                                    alt="book icon"
+                                    src="assets/lp-penyaluran-icon/faq/Cheque.png"
+                                    alt="cheque icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
-                                 Bagaimana syarat minimal device?
+                              <p class="text-lg leading-[20px] font-[400]">
+                                 Apa itu ISA?
                               </p>
                            </div>
                            <img
@@ -3664,15 +3698,16 @@
                         </button>
 
                         <div
-                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           class="relative overflow-hidden transition-all max-h-0 duration-700"
                            x-ref="container1"
-                           x-bind:style="selected == 8 ? 'max-height: 300px' : ''"
+                           x-bind:style="selected == 8 ? 'max-height: 300px'  : ''"
                         >
                            <div class="pr-8 pl-[78px] pt-0 pb-4">
                               <p class="text-base font-[400]">
-                                 Kalian bisa mengikuti program ini bisa
-                                 menggunakan Laptop/PC yang menunjang karir &
-                                 pengerjaan project.
+                                 ISA merupakan program dimana kalian bisa ikut
+                                 program akselerasi dulu, bayarnya nanti kalau
+                                 kalian sudah memiliki penghasilan. Jadi seperti
+                                 paylater yaa kak.
                               </p>
                            </div>
                         </div>
@@ -3690,13 +3725,12 @@
                                  class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
                               >
                                  <img
-                                    src="assets/lp-penyaluran-icon/faq/Static View Level2.png"
+                                    src="assets/lp-penyaluran-icon/faq/Book.png"
                                     alt="book icon"
                                  />
                               </div>
-                              <p class="text-xl font-[400]">
-                                 Bagaimana jika bingung membuat CV dan interview
-                                 ?
+                              <p class="text-lg leading-[20px] font-[400]">
+                                 Bagaimana syarat minimal device?
                               </p>
                            </div>
                            <img
@@ -3711,6 +3745,50 @@
                            class="relative overflow-hidden transition-all max-h-0 duration-500"
                            x-ref="container1"
                            x-bind:style="selected == 9 ? 'max-height: 300px' : ''"
+                        >
+                           <div class="pr-8 pl-[78px] pt-0 pb-4">
+                              <p class="text-base font-[400]">
+                                 Kalian bisa mengikuti program ini bisa
+                                 menggunakan Laptop/PC yang menunjang karir &
+                                 pengerjaan project.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li
+                        class="relative bg-white rounded-2xl shadow-box-custom"
+                     >
+                        <button
+                           type="button"
+                           class="w-full p-3 rounded-2xl text-left flex justify-between items-center"
+                           @click="selected !== 10 ? selected = 10 : selected = null"
+                        >
+                           <div class="flex items-center gap-x-4">
+                              <div
+                                 class="bg-primary flex flex-none w-[48px] h-[48px] items-center justify-center rounded-full p-1"
+                              >
+                                 <img
+                                    src="assets/lp-penyaluran-icon/faq/Static View Level2.png"
+                                    alt="book icon"
+                                 />
+                              </div>
+                              <p class="text-lg leading-[20px] font-[400]">
+                                 Bagaimana jika bingung membuat CV dan interview
+                                 ?
+                              </p>
+                           </div>
+                           <img
+                              :class="{ 'rotate-180 transition-transform': selected === 10 }"
+                              class="mr-2"
+                              src="assets/lp-penyaluran-icon/faq/chevron-down.svg"
+                              alt="cevron down"
+                           />
+                        </button>
+
+                        <div
+                           class="relative overflow-hidden transition-all max-h-0 duration-500"
+                           x-ref="container1"
+                           x-bind:style="selected == 10 ? 'max-height: 300px' : ''"
                         >
                            <div class="pr-8 pl-[78px] pt-0 pb-4">
                               <p class="text-base font-[400]">
