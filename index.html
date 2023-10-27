@@ -431,7 +431,7 @@
                            class="text-4xl font-[700] w-full md:text-5xl md:leading-[120%] mx-auto md:mx-0 text-left"
                         >
                            <span
-                              class="text-[#187CFF] text-xl md:text-3xl lg:text-4xl font-[700]"
+                              class="text-[#187CFF] text-2xl md:text-3xl lg:text-4xl font-[700]"
                               >Program</span
                            >
                            <br />
@@ -639,7 +639,7 @@
                </div>
                <div class="mt-0 z-10 lg:w-[900px]">
                   <h4
-                     class="mt-4 md:mt-0 text-left text-3xl md:text-[44px] text-white md:leading-[64px] font-[700]"
+                     class="mt-4 md:mt-0 text-left text-2xl md:text-3xl md:text-[44px] text-white md:leading-[64px] font-[700]"
                   >
                      Belum Punya Uang?
                   </h4>
@@ -743,7 +743,10 @@
       <!-- End of Belum punya uang -->
 
       <!-- Industri -->
-      <section class="bg-white pt-4 lg:pt-36 sm:pb-20 pb-10">
+      <section class="relative pt-4 lg:pt-36 sm:pb-20 pb-10">
+         <div
+            class="absolute bottom-[-40px] z-[20] w-full h-[60px] bg-gradient-to-b from-white to-transparent"
+         ></div>
          <div class="mx-auto">
             <section
                class="flex flex-col items-center w-[90%] h-fit mx-auto lg:w-[1016px]"
@@ -753,7 +756,9 @@
                >
                   Mau Jadi Apa? Pilih Bonus Kelasmu!
                </h4>
-               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+               <p
+                  class="mt-4 text-center text-lg md:text-xl font-[400] text-[#676767]"
+               >
                   Saatnya untuk lampaui batasan. Belajar & berkomunitas untuk
                   raih karir impianmu
                </p>
@@ -935,13 +940,15 @@
                >
                   Gabung Komunitas Walau di Rumah Aja
                </h4>
-               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+               <p
+                  class="mt-4 text-center text-lg md:text-xl font-[400] text-[#676767]"
+               >
                   Telah menjangkau 40 kota di Indonesia, kami terhubung dengan
-                  partner praktisi dari ragam geografis; Perbanyak koneksi,
-                  kembangkan komunitas.
+                  partner praktisi <br class="lg:block hidden" />
+                  dari ragam geografis; Perbanyak koneksi, kembangkan komunitas.
                </p>
                <div
-                  class="grid grid-cols-2 md:grid-cols-4 w-full lg:w-[80%] gap-5 mt-10"
+                  class="grid grid-cols-2 md:grid-cols-4 w-full lg:w-[70%] gap-5 mt-10"
                >
                   <div
                      class="p-5 shadow-card-custom rounded-2xl flex flex-col gap-4 items-center bg-white"
@@ -1014,8 +1021,11 @@
 
       <!-- apa itu akselerasi karir2-->
       <section
-         class="pt-10 sm:pt-20 pb-0 sm:pb-24 bg-[url(assets/lp-penyaluran-icon/bg-line.svg)] bg-no-repeat bg-cover"
+         class="pt-10 relative sm:pt-20 pb-0 sm:pb-24 bg-[url(assets/lp-penyaluran-icon/bg-line.svg)] bg-no-repeat bg-cover"
       >
+         <div
+            class="absolute top-[-2px] z-[20] w-full h-[40px] bg-gradient-to-b from-[#F6FCFF] to-transparent"
+         ></div>
          <div class="container mx-auto">
             <section
                class="lg:relative flex flex-col justify-center items-center w-[90%] md:w-full mx-auto lg:w-[1016px]"
@@ -1025,7 +1035,9 @@
                >
                   Apa itu Program Jaminan Kerja
                </h4>
-               <p class="mt-4 text-center text-xl font-[400] text-[#676767]">
+               <p
+                  class="mt-4 text-center text-lg md:text-xl font-[400] text-[#676767]"
+               >
                   Dengan program akselerasi karir tambah pengalaman kerja dan
                   dapatkan banyak portofolio dengan bimbingan mentor profesional
                   mulai 0 rupiah!
@@ -1037,16 +1049,18 @@
                      class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
                   >
                      <div
-                        class="bg-[url('./assets/lp-penyaluran/karir/karir1.png')] h-[300px] bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir1.png')] h-[300px] bg-contain bg-bottom rounded-t-xl w-[90%] mx-auto bg-no-repeat"
                      ></div>
 
                      <div
-                        class="flex flex-col gap-2 items-start text-[#303030] p-6"
+                        class="flex flex-col gap-2 items-start text-[#303030] px-6 md:px-10 py-6"
                      >
-                        <h5 class="font-[600] text-[24px]">
+                        <h5 class="font-[600] text-xl md:text-[24px]">
                            Sekali bayar dijamin dapat kerja
                         </h5>
-                        <p class="font-[400] text-lg text-[#676767]">
+                        <p
+                           class="font-[400] text-base md:text-lg text-[#676767]"
+                        >
                            Hanya dengan membayar sekali langsung bimbingan
                            sampai dapat kerja
                         </p>
@@ -1056,16 +1070,18 @@
                      class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
                   >
                      <div
-                        class="bg-[url('./assets/lp-penyaluran/karir/karir2.png')] h-[300px] bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir2.png')] h-[300px] bg-contain bg-bottom rounded-t-xl w-[90%] mx-auto bg-no-repeat"
                      ></div>
 
                      <div
-                        class="flex flex-col gap-2 w-full items-start text-[#303030] p-6"
+                        class="flex flex-col gap-2 w-full items-start text-[#303030] px-6 md:px-10 py-6"
                      >
-                        <h5 class="font-[600] text-[24px]">
+                        <h5 class="font-[600] text-xl md:text-[24px]">
                            Harga terjangkau dan bisa dicicil
                         </h5>
-                        <p class="font-[400] text-lg text-[#676767]">
+                        <p
+                           class="font-[400] text-base md:text-lg text-[#676767]"
+                        >
                            Kuliah bisa puluhan juta, belajar disini mulai dari
                            Rp.0
                         </p>
@@ -1076,16 +1092,18 @@
                      class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
                   >
                      <div
-                        class="bg-[url('./assets/lp-penyaluran/karir/karir3.png')] h-[300px] bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir3.png')] w-[90%] mx-auto h-[300px] bg-contain bg-bottom rounded-t-xl bg-no-repeat"
                      ></div>
 
                      <div
-                        class="flex flex-col gap-2 items-start text-[#303030] p-6"
+                        class="flex flex-col gap-2 items-start text-[#303030] px-6 md:px-10 py-6"
                      >
-                        <h5 class="font-[600] text-[24px]">
+                        <h5 class="font-[600] text-xl md:text-[24px]">
                            Cepat, Tidak sampai setahun
                         </h5>
-                        <p class="font-[400] text-lg text-[#676767]">
+                        <p
+                           class="font-[400] text-base md:text-lg text-[#676767]"
+                        >
                            Dibanding kuliah, sudah lama min 4 tahun, ketika
                            lulus harus cari kerja sendiri lagi
                         </p>
@@ -1095,16 +1113,18 @@
                      class="shadow-card-custom rounded-xl flex flex-col items-center bg-white"
                   >
                      <div
-                        class="bg-[url('./assets/lp-penyaluran/karir/karir4.png')] h-[300px] bg-contain bg-center rounded-t-xl w-full bg-no-repeat"
+                        class="bg-[url('./assets/lp-penyaluran/karir/karir4.png')] h-[300px] bg-contain bg-bottom rounded-t-xl w-[90%] mx-auto bg-no-repeat"
                      ></div>
 
                      <div
-                        class="flex flex-col gap-2 items-start text-[#303030] p-6"
+                        class="flex flex-col gap-2 items-start text-[#303030] px-6 md:px-10 py-6"
                      >
-                        <h5 class="font-[600] text-[24px]">
+                        <h5 class="font-[600] text-xl md:text-[24px]">
                            Dapat Garansi 1 Tahun
                         </h5>
-                        <p class="font-[400] text-lg text-[#676767]">
+                        <p
+                           class="font-[400] text-base md:text-lg text-[#676767]"
+                        >
                            Kalau sampai 1 tahun belum dapat kerja, kami berikan
                            layanan Gratis!
                         </p>
@@ -1117,9 +1137,9 @@
       <!-- End of apa itu akselerasi karir2-->
 
       <!-- live konsultasi -->
-      <section class="pt-10 pb-10 sm:pt-24 sm:pb-28 bg-[#F8FCFF]">
+      <section class="pt-10 relative pb-10 sm:pt-0 sm:mb-20 bg-[#F8FCFF]">
          <div
-            class="relative w-full max-w-[1500px] mx-auto min-w-auto 2xl:min-w-[1306px] h-[730px] md:bg-center lg:bg-[url('assets/lp-penyaluran/bg-live2.png')] bg-[url('assets/lp-penyaluran/bg-live1.png')] bg-left bg-no-repeat bg-cover"
+            class="relative w-full pt-10 max-w-[1500px] mx-auto min-w-auto 2xl:min-w-[1306px] h-[730px] md:bg-center lg:bg-[url('assets/lp-penyaluran/bg-live2.png')] bg-[url('assets/lp-penyaluran/bg-live1.png')] bg-left bg-no-repeat bg-cover"
          >
             <div
                class="flex justify-start items-center w-[90%] md:max-w-[1024px] lg:max-w-[1016px] h-fit mx-auto"
@@ -1191,19 +1211,19 @@
                class="absolute top-0 left-[-16px] w-[200%] md:w-[90%] h-[740px] md:hero-gradasi z-[9] hidden md:block hero-gradasi1"
             ></div>
             <div
-               class="hero-gradasi2 absolute top-0 right-[-2px] w-[100%] lg:w-[216px] h-[800px]"
-            ></div>
-            <div
-               class="absolute bottom-[-2px] z-[9] w-full h-[53.809px] bg-gradient-to-b from-transparent to-slate-50"
-            ></div>
-            <div
-               class="absolute top-[-2px] z-[9] w-full h-[53.809px] bg-gradient-to-b from-slate-50 to-transparent"
+               class="hero-gradasi2 absolute top-0 right-[-2px] w-[100%] lg:w-[216px] h-[740px]"
             ></div>
 
             <div
                class="absolute w-full h-fit top-[667px] md:top-[637px] bg-transparent z-20"
             ></div>
          </div>
+         <div
+            class="absolute bottom-0 z-[9] w-full h-[80px] bg-gradient-to-b from-transparent from-10% via-white via-50% to-white to-40%"
+         ></div>
+         <div
+            class="absolute top-[-2px] z-[20] w-full h-[60px] bg-gradient-to-b from-white to-transparent"
+         ></div>
 
          <div class="relative w-[90%] mx-auto">
             <a
@@ -1226,7 +1246,7 @@
             >
                Alur Program Jaminan Kerja
             </h2>
-            <div class="flex relative gap-x-10 w-full mt-24">
+            <div class="flex relative gap-x-10 w-full mt-10 md:mt-24">
                <div
                   class="absolute z-10 border-l-2 md:ml-auto ml-2 border-gray-500 border-dashed left-0 right-0 m-auto w-0 h-full"
                ></div>
@@ -1798,7 +1818,7 @@
          <div
             class="flex flex-col justify-start items-center w-[90%] md:max-w-[1024px] lg:max-w-[1016px] h-fit mx-auto"
          >
-            <div class="flex z-20 w-full mt-16">
+            <div class="flex z-20 w-full mt-0 md:mt-16">
                <div class="flex relative gap-x-10 w-full mt-16">
                   <div
                      class="absolute z-10 border-l-2 md:ml-auto ml-2 border-dashed border-gray-500 left-0 right-0 m-auto w-0 h-full"
@@ -2024,7 +2044,7 @@
                   Cetak Talenta Terbaik Dibidangnya
                </h4>
                <p
-                  class="relative z-30 mt-4 text-center text-xl font-[400] text-[#676767]"
+                  class="relative z-30 mt-4 text-center text-base md:text-xl font-[400] text-[#676767]"
                >
                   95% Siswa Eduwork Berhasil Peroleh Pekerjaan Kurang Dari 1
                   Bulan di Perusahaan Ternama
@@ -2111,13 +2131,13 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div
-                           class="grid gap-[10px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full"
+                           class="grid gap-[10px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full"
                         >
                            <div
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all1.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2134,7 +2154,7 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all2.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2151,7 +2171,7 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all3.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2166,7 +2186,170 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all4.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Yukari Japanese Sushi House
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Fajriatun Munawarah
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Dapur Solo App
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Imam Khairi
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Kode Restaurant
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Imam Khoiri
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Rini</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Nurdin</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">Vegipuff</h6>
+                                 <p class="font-[400] text-sm">By Aziz</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">Slide 2</div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div
+                     class="swiper-button-next bg-white p-8 rounded-full"
+                  ></div>
+                  <div
+                     class="swiper-button-prev bg-white p-8 rounded-full"
+                  ></div>
+               </div>
+
+               <div
+                  class="swiper mySwiper relative mt-8"
+                  x-show="testiTab === 'ui-ux'"
+               >
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div
+                           class="grid gap-[10px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full"
+                        >
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Music Apps Case Study
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Bagas Avianto
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Digital Bank Case Study
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Mukhamad Ulinuha
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Ruang Mentor App
+                                 </h6>
+                                 <p class="font-[400] text-sm">By Kresnawan</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui4.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2183,7 +2366,7 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all5.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui5.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2200,16 +2383,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all6.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui6.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    Grocery Mobile App
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Fina Fitria
                                  </p>
                               </div>
                            </div>
@@ -2217,16 +2400,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all7.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui7.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    pegadaian Syariah Digital App
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Akbar Rilo Pambudi
                                  </p>
                               </div>
                            </div>
@@ -2234,16 +2417,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all8.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui8.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    Credit Card Checkout
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Fina Fitria
                                  </p>
                               </div>
                            </div>
@@ -2251,16 +2434,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all9.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/ui9.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    GoKitchen Case Study
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Bagas Avianto
+                                    By Mohammad Hanif
                                  </p>
                               </div>
                            </div>
@@ -2286,22 +2469,22 @@
                   <div class="swiper-wrapper">
                      <div class="swiper-slide">
                         <div
-                           class="grid gap-[10px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full"
+                           class="grid gap-[10px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full"
                         >
                            <div
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all1.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Music Apps Case Study
+                                    Yukari Japanese Sushi House
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Bagas Avianto
+                                    By Fajriatun Munawarah
                                  </p>
                               </div>
                            </div>
@@ -2309,16 +2492,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all2.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Digital Bank Case Study
+                                    Dapur Solo App
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mukhamad Ulinuha
+                                    By Imam Khoiri
                                  </p>
                               </div>
                            </div>
@@ -2326,7 +2509,41 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all3.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    Kode Restaurant
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Imam Khoiri
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro4.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">
+                                    NYX Management
+                                 </h6>
+                                 <p class="font-[400] text-sm">
+                                    By Fitria Intani
+                                 </p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro5.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
@@ -2334,23 +2551,8 @@
                                  <h6 class="font-[500] text-2xl">
                                     Ruang Mentor App
                                  </h6>
-                                 <p class="font-[400] text-sm">By Kresnawan</p>
-                              </div>
-                           </div>
-                           <div
-                              class="h-[320px] w-full overflow-hidden porto-hover relative"
-                           >
-                              <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all4.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
-                              ></div>
-                              <div
-                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
-                              >
-                                 <h6 class="font-[500] text-2xl">
-                                    Money Saving Mobile App
-                                 </h6>
                                  <p class="font-[400] text-sm">
-                                    By Fikri Rachman
+                                    By Rizqi Ramadhani
                                  </p>
                               </div>
                            </div>
@@ -2358,16 +2560,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all5.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro6.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Halal Finder App
+                                    Palugada Store App
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mukhamad Ulinuha
+                                    By Aditya Yafi
                                  </p>
                               </div>
                            </div>
@@ -2375,16 +2577,16 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all6.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro7.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    Web Pos Application
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Rahmat Wijayanto
                                  </p>
                               </div>
                            </div>
@@ -2392,16 +2594,14 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all7.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro8.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
-                                 <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
-                                 </h6>
+                                 <h6 class="font-[500] text-2xl">Trapelib</h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Muhammad Ammar
                                  </p>
                               </div>
                            </div>
@@ -2409,34 +2609,160 @@
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all8.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/pro9.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    Kode Restaurant
                                  </h6>
                                  <p class="font-[400] text-sm">
-                                    By Mark Zuckerberg
+                                    By Mohammad Fahri
                                  </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">Slide 2</div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div
+                     class="swiper-button-next bg-white p-8 rounded-full"
+                  ></div>
+                  <div
+                     class="swiper-button-prev bg-white p-8 rounded-full"
+                  ></div>
+               </div>
+
+               <div
+                  class="swiper mySwiper relative mt-8"
+                  x-show="testiTab === 'digital-marketing'"
+               >
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div
+                           class="grid gap-[10px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full"
+                        >
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar1.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Rini</p>
                               </div>
                            </div>
                            <div
                               class="h-[320px] w-full overflow-hidden porto-hover relative"
                            >
                               <div
-                                 class="bg-[url(assets/lp-penyaluran/porto/all9.png)] absolute transition-all porto-hover-scale w-full h-full bg-no-repeat"
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar2.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Nurdin</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar3.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">Vegipuff</h6>
+                                 <p class="font-[400] text-sm">By Aziz</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar4.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">Vegipuff</h6>
+                                 <p class="font-[400] text-sm">By Guntur</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar5.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">Vegipuff</h6>
+                                 <p class="font-[400] text-sm">By Yoga</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar6.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Rini</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar7.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Nurdin</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar8.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
+                              ></div>
+                              <div
+                                 class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
+                              >
+                                 <h6 class="font-[500] text-2xl">idellstore</h6>
+                                 <p class="font-[400] text-sm">By Aziz</p>
+                              </div>
+                           </div>
+                           <div
+                              class="h-[320px] w-full overflow-hidden porto-hover relative"
+                           >
+                              <div
+                                 class="bg-[url(assets/lp-penyaluran/porto/mar9.png)] absolute transition-all porto-hover-scale bg-cover w-full h-full bg-no-repeat"
                               ></div>
                               <div
                                  class="text-white porto-hover-overlay flex flex-col gap-y-1 p-5 text-left"
                               >
                                  <h6 class="font-[500] text-2xl">
-                                    Landing Page Website
+                                    fsd.kabupatenmadiun
                                  </h6>
-                                 <p class="font-[400] text-sm">
-                                    By Bagas Avianto
-                                 </p>
+                                 <p class="font-[400] text-sm">By Rini</p>
                               </div>
                            </div>
                         </div>
@@ -2459,17 +2785,315 @@
       <!-- End of Portofolio Alumni -->
 
       <!-- Keunggulan akselerasi Karir -->
-      <section class="pt-10 pb-8 sm:py-24">
+      <section class="pt-4 pb-8 sm:py-24">
          <div
             class="flex flex-col justify-start items-center w-[90%] lg:max-w-[1016px] h-fit mx-auto"
          >
             <h2
-               class="text-center mb-4 sm:mb-12 font-[700] lg:text-3xl text-2xl md:text-4xl"
+               class="text-center mb-4 sm:mb-12 font-[700] lg:text-4xl text-3xl md:text-3xl"
             >
                Keunggulan Program Jaminan Kerja
             </h2>
+
+            <div class="md:hidden grid grid-cols-2 gap-y-2 w-full mt-4 md:mt-0">
+               <div
+                  class="bg-white flex items-center mr-1 justify-center border-2 rounded-xl border-primary"
+               >
+                  <h1 class="text-lg font-[600] p-3">Kuliah</h1>
+               </div>
+               <div
+                  class="bg-primary flex items-center ml-1 justify-center rounded-xl"
+               >
+                  <h1 class="text-lg font-[600] text-white text-center p-3">
+                     Program Jaminan Kerja
+                  </h1>
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Lama Belajar sd Kerja
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  &gt; 4 tahun
+               </div>
+
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  &lt; 1 tahun (rata-rata 1 - 3 bulan)
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Jumlah Sertifikat
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  1 ijazah
+               </div>
+
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited Sertifikat Eduwork
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Career Preparation Class
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/check.svg"
+                     alt=""
+                  />
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Jaminan Kerja
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/check.svg"
+                     alt=""
+                  />
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Building CV
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/check.svg"
+                     alt=""
+                  />
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Konsultasi Career Support
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Setiap hari (di jam tertentu)
+               </div>
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Porto Study Case
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Pengalaman Magang
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  3 Bulan
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Pengalaman Real Project Based
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Skill Managerial
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Pengalaman Speaker
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  Unlimited
+               </div>
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Penyaluran / Submiting Portal
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/check.svg"
+                     alt=""
+                  />
+               </div>
+
+               <p
+                  class="col-span-2 p-3 text-lg bg-[#EBF3FF] font-[500] rounded-xl flex items-center justify-center"
+               >
+                  Pendampingan Setelaj Kerja
+               </p>
+               <div
+                  class="p-3 text-base border-r-2 border-gray-400 border-dotted font-[500] flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/close.svg"
+                     alt=""
+                  />
+               </div>
+               <div
+                  class="p-3 text-base font-[500] bg-primary rounded-r-xl ml-1 text-white flex items-center justify-center"
+               >
+                  <img
+                     loading="lazy"
+                     class="mx-auto w-[20px] sm:w-[24px]"
+                     src="assets/lp-penyaluran-icon/check.svg"
+                     alt=""
+                  />
+               </div>
+            </div>
             <table
-               class="table-auto lg:table-fixed"
+               class="hidden md:table table-auto lg:table-fixed"
                style="width: 100%; border-collapse: collapse"
             >
                <tbody class="text-center">
@@ -3003,7 +3627,9 @@
             >
                Harga Paket
             </h2>
-            <p class="text-center text-2xl font-[400] text-[#676767]">
+            <p
+               class="text-center text-lg md:text-2xl font-[400] text-[#676767]"
+            >
                Pilih Dan Tentukan Program Yang Menentukan Masa Depanmu!
             </p>
             <div
@@ -3436,8 +4062,9 @@
                   />
                </form>
 
-               <p class="text-2xl text-center font-[400]">
+               <p class="text-lg md:text-2xl text-center font-[400]">
                   Selamat, khusus hari ini dapat gratis kelas dan potongan harga
+                  <br />
                   <span class="text-3xl font-[700]">Rp.500.000</span>
                </p>
 
